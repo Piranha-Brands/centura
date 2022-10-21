@@ -14,7 +14,7 @@
         "template--15892197540001__ae99470f-6900-4b66-863f-0c167628695a-1666114850b2108126-0": {
           "type": "heading",
           "settings": {
-            "heading": "Littleton  and Castle  Rock",
+            "heading": "Littleton",
             "heading_size": "h1"
           }
         },
@@ -149,43 +149,37 @@
         "template--15892197540001__862c3060-5878-47df-a658-cdeb2efd7000-166611482363922649-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "littleton-castle-rock-cardiac-diagnostic"
+            "collection": "littleton-cardiac-diagnostic"
           }
         },
         "5145803d-4d95-4ca9-85a3-39df853a0d1f": {
           "type": "featured_collection",
           "settings": {
-            "collection": "littleton-castle-rock-cna"
+            "collection": "littleton-emergency-nursing"
           }
         },
         "89c00770-59df-40ff-a3f2-791c8b473ea0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "littleton-castle-rock-emergency-nursing"
+            "collection": "littleton-medical-imaging"
           }
         },
         "43d7b55b-6d23-46d0-956c-f607aea5034e": {
           "type": "featured_collection",
           "settings": {
-            "collection": "littleton-castle-rock-medical-imaging"
+            "collection": "littleton-nursing"
           }
         },
         "4ce5d6a2-1a40-44f0-a726-6d80a6094f3b": {
           "type": "featured_collection",
           "settings": {
-            "collection": "littleton-castle-rock-nursing"
+            "collection": "littleton-resp-therapy"
           }
         },
         "template--15892197540001__862c3060-5878-47df-a658-cdeb2efd7000-166611482363922649-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "littleton-castle-rock-resp-therapy"
-          }
-        },
-        "template--15892197540001__862c3060-5878-47df-a658-cdeb2efd7000-166611482363922649-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "littleton-castle-rock-telemetry"
+            "collection": "littleton-telemetry"
           }
         }
       },
@@ -195,8 +189,7 @@
         "89c00770-59df-40ff-a3f2-791c8b473ea0",
         "43d7b55b-6d23-46d0-956c-f607aea5034e",
         "4ce5d6a2-1a40-44f0-a726-6d80a6094f3b",
-        "template--15892197540001__862c3060-5878-47df-a658-cdeb2efd7000-166611482363922649-1",
-        "template--15892197540001__862c3060-5878-47df-a658-cdeb2efd7000-166611482363922649-2"
+        "template--15892197540001__862c3060-5878-47df-a658-cdeb2efd7000-166611482363922649-1"
       ],
       "settings": {
         "title": "",
