@@ -6,7 +6,7 @@
         "vendor": {
           "type": "text",
           "settings": {
-            "text": "{{ product.vendor }}",
+            "text": "{{ product.metafields.pb_backend.brand.value }} - {{ product.metafields.pb_backend.line.value }}",
             "text_style": "uppercase"
           }
         },
