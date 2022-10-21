@@ -355,7 +355,8 @@
           <div class="card-information">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
-              <div class="caption-with-letter-spacing light">{{ 'products.product.vendor' | t }}</div>
+              <div class="caption-with-letter-spacing light">{{ card_product.metafields.pb_backend.brand.value }} - {{ card_product.metafields.pb_backend.line.value }}</div>
+            
             {%- endif -%}
             {% render 'price' %}
           </div>
