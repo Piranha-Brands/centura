@@ -14,7 +14,7 @@
         "template--15892197540001__ae99470f-6900-4b66-863f-0c167628695a-1666114850b2108126-0": {
           "type": "heading",
           "settings": {
-            "heading": "Littleton",
+            "heading": "Littleton  and Castle  Rock",
             "heading_size": "h1"
           }
         },
@@ -40,7 +40,7 @@
         "template--15892197540001__ae99470f-6900-4b66-863f-0c167628695a-1666114850b2108126-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/littleton_800.png",
+        "image": "shopify:\/\/shop_images\/Logo_LAH_Castlerock_Combo_RGB_copy_16cc2aeb-8140-4d97-b9fb-7521e50c01c7.png",
         "height": "small",
         "desktop_image_width": "small",
         "layout": "image_first",
@@ -107,7 +107,7 @@
           "type": "column",
           "settings": {
             "title": "",
-            "text": "<p><a href=\"\/collections\/littleton-cardiac-diagnostic\" title=\"Littleton | Cardiac Diagnostic\">Cardiac Diagnostic<\/a><\/p><p><a href=\"\/collections\/littleton-emergency-nursing\" title=\"Littleton | Emergency Nursing\">Emergency Nursing<\/a><\/p><p><a href=\"\/collections\/littleton-medical-imaging\" title=\"Littleton | Medical Imaging\">Medical Imaging<\/a><\/p><p><a href=\"\/collections\/littleton-nursing\" title=\"Littleton | Nursing\">Nursing<\/a><\/p><p><a href=\"\/collections\/littleton-resp-therapy\" title=\"Littleton | Resp Therapy\">Resp Therapy<\/a><\/p><p><a href=\"\/collections\/littleton-telemetry\" title=\"Littleton | Telemetry\">Telemetry<\/a><\/p>",
+            "text": "<p><a href=\"\/collections\/littleton-castle-rock-cardiac-diagnostic\" title=\"Littleton\/Castle Rock | Cardiac Diagnostic\">Cardiac Diagnostic<\/a><\/p><p><a href=\"\/collections\/littleton-castle-rock-cna\" title=\"Littleton\/Castle Rock | CNA\">CNA<\/a><\/p><p><a href=\"\/collections\/littleton-castle-rock-emergency-nursing\" title=\"Littleton\/Castle Rock | Emergency Nursing\">Emergency Nursing<\/a><\/p><p><a href=\"\/collections\/littleton-castle-rock-medical-imaging\" title=\"Littleton\/Castle Rock | Medical Imaging\">Medical Imaging<\/a><\/p><p><a href=\"\/collections\/littleton-castle-rock-nursing\" title=\"Littleton\/Castle Rock | Nursing\">Nursing<\/a><\/p><p><a href=\"\/collections\/littleton-castle-rock-resp-therapy\" title=\"Littleton\/Castle Rock | Resp Therapy\">Resp Therapy<\/a><\/p><p><a href=\"\/collections\/littleton-castle-rock-telemetry\" title=\"Littleton\/Castle Rock | Telemetry\">Telemetry<\/a><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -149,37 +149,43 @@
         "template--15892197540001__862c3060-5878-47df-a658-cdeb2efd7000-166611482363922649-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "littleton-cardiac-diagnostic"
+            "collection": "littleton-castle-rock-cardiac-diagnostic"
           }
         },
         "5145803d-4d95-4ca9-85a3-39df853a0d1f": {
           "type": "featured_collection",
           "settings": {
-            "collection": "littleton-emergency-nursing"
+            "collection": "littleton-castle-rock-cna"
           }
         },
         "89c00770-59df-40ff-a3f2-791c8b473ea0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "littleton-medical-imaging"
+            "collection": "littleton-castle-rock-emergency-nursing"
           }
         },
         "43d7b55b-6d23-46d0-956c-f607aea5034e": {
           "type": "featured_collection",
           "settings": {
-            "collection": "littleton-nursing"
+            "collection": "littleton-castle-rock-medical-imaging"
           }
         },
         "4ce5d6a2-1a40-44f0-a726-6d80a6094f3b": {
           "type": "featured_collection",
           "settings": {
-            "collection": "littleton-resp-therapy"
+            "collection": "littleton-castle-rock-nursing"
           }
         },
         "template--15892197540001__862c3060-5878-47df-a658-cdeb2efd7000-166611482363922649-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "littleton-telemetry"
+            "collection": "littleton-castle-rock-resp-therapy"
+          }
+        },
+        "template--15892197540001__862c3060-5878-47df-a658-cdeb2efd7000-166611482363922649-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "littleton-castle-rock-telemetry"
           }
         }
       },
@@ -189,7 +195,8 @@
         "89c00770-59df-40ff-a3f2-791c8b473ea0",
         "43d7b55b-6d23-46d0-956c-f607aea5034e",
         "4ce5d6a2-1a40-44f0-a726-6d80a6094f3b",
-        "template--15892197540001__862c3060-5878-47df-a658-cdeb2efd7000-166611482363922649-1"
+        "template--15892197540001__862c3060-5878-47df-a658-cdeb2efd7000-166611482363922649-1",
+        "template--15892197540001__862c3060-5878-47df-a658-cdeb2efd7000-166611482363922649-2"
       ],
       "settings": {
         "title": "",
@@ -198,7 +205,7 @@
         "columns_desktop": 5,
         "color_scheme": "background-1",
         "show_view_all": false,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 0,
         "padding_bottom": 36
