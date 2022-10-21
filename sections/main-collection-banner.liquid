@@ -15,7 +15,7 @@
       <h1 class="collection-hero__title">
         <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
        
-        {{- collection.title[1] | escape -}}
+          {{- collection.title | split | escape -}}
       </h1>
 
       {%- if section.settings.show_collection_description -%}
