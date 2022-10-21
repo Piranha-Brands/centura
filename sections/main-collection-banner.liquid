@@ -9,7 +9,7 @@
   }
 {%- endstyle -%}
 
-{%  assign hospital-title = coleciton.title | split: ' | ' | last %}
+{%  assign hospital-title = collecton.title | split: ' | ' | last %}
 
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
   <div class="collection-hero__inner page-width">
