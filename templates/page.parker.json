@@ -102,37 +102,91 @@
         "template--15906665988257__4cc19e8c-d5d7-4d50-a7d4-18ac7da415b6-166555153332927ebd-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "st-anthonys-cna"
+            "collection": "parker-admin-managers-rn"
           }
         },
         "template--15906665988257__4cc19e8c-d5d7-4d50-a7d4-18ac7da415b6-166555153332927ebd-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "st-anthonys-medical-imaging"
+            "collection": "parker-case-management"
           }
         },
         "template--15906665988257__4cc19e8c-d5d7-4d50-a7d4-18ac7da415b6-166555153332927ebd-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": "st-anthonys-mental-health"
+            "collection": "parker-cna"
           }
         },
         "853cd308-2928-4535-bd49-010c64e17ba8": {
           "type": "featured_collection",
           "settings": {
-            "collection": "st-anthonys-nursing"
+            "collection": "parker-emergency-nursing"
           }
         },
         "a298a2f2-b37c-4e2c-a8e2-3e0650740336": {
           "type": "featured_collection",
           "settings": {
-            "collection": "st-anthonys-paramedics"
+            "collection": "parker-medical-imaging"
           }
         },
         "420b3461-454e-43dc-9921-61a810d9827b": {
           "type": "featured_collection",
           "settings": {
-            "collection": "st-anthonys-tech"
+            "collection": "parker-neurodiagnostics-sleep"
+          }
+        },
+        "65ab9449-3060-4c5d-a84a-46d4b81857b4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "parker-nursing"
+          }
+        },
+        "d7253d69-90d0-4f15-93d7-6c85b30761b0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "parker-patient-registration"
+          }
+        },
+        "1ecca5a8-849d-4b38-b08b-e9f38e5357e5": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "parker-pharmacy"
+          }
+        },
+        "a4f45d54-0c97-47c6-8ba3-7306e649a4e4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "parker-quality-assurance"
+          }
+        },
+        "20093836-4d2a-49ab-a0ab-b4046e0a1332": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "parker-telemetry"
+          }
+        },
+        "ae75ecc4-5400-4318-8420-ba3132600e87": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "parker-trauma"
+          }
+        },
+        "4b59c9d1-6173-42bf-acda-de127211ca60": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "parker-unit-secretary"
+          }
+        },
+        "1877b86a-44f7-4288-b932-4f27b27f9f5e": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "parker-women-babies"
+          }
+        },
+        "2f03e227-fd0c-453d-9297-d5b85eb38dd4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "parker-wound-care"
           }
         }
       },
@@ -142,7 +196,16 @@
         "template--15906665988257__4cc19e8c-d5d7-4d50-a7d4-18ac7da415b6-166555153332927ebd-2",
         "853cd308-2928-4535-bd49-010c64e17ba8",
         "a298a2f2-b37c-4e2c-a8e2-3e0650740336",
-        "420b3461-454e-43dc-9921-61a810d9827b"
+        "420b3461-454e-43dc-9921-61a810d9827b",
+        "65ab9449-3060-4c5d-a84a-46d4b81857b4",
+        "d7253d69-90d0-4f15-93d7-6c85b30761b0",
+        "1ecca5a8-849d-4b38-b08b-e9f38e5357e5",
+        "a4f45d54-0c97-47c6-8ba3-7306e649a4e4",
+        "20093836-4d2a-49ab-a0ab-b4046e0a1332",
+        "ae75ecc4-5400-4318-8420-ba3132600e87",
+        "4b59c9d1-6173-42bf-acda-de127211ca60",
+        "1877b86a-44f7-4288-b932-4f27b27f9f5e",
+        "2f03e227-fd0c-453d-9297-d5b85eb38dd4"
       ],
       "settings": {
         "title": "",
