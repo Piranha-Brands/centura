@@ -60,7 +60,7 @@
           "type": "column",
           "settings": {
             "title": "",
-            "text": "<p><a href=\"\/collections\/centura-mountain-er-copper-breckenridge-keystone-cct\" title=\"Centura Mountain ER (Copper, Breckenridge, Keystone) | CCT\">CCT<\/a><\/p><p><a href=\"\/collections\/centura-mountain-er-copper-breckenridge-keystone-nursing\" title=\"Centura Mountain ER (Copper, Breckenridge, Keystone) | Nursing\">Nursing<\/a><\/p><p><a href=\"\/collections\/centura-mountain-er-copper-breckenridge-keystone-pas\" title=\"Centura Mountain ER (Copper, Breckenridge, Keystone) | PAS\">PAS<\/a><\/p>",
+            "text": "<p><a href=\"\/collections\/centura-mountain-er-copper-breckenridge-keystone-cct\" title=\"Centura Mountain ER (Copper, Breckenridge, Keystone) | CCT\">CCT<\/a><\/p><p><a href=\"\/collections\/centura-mountain-er-copper-breckenridge-keystone-nursing\" title=\"Centura Mountain ER (Copper, Breckenridge, Keystone) | Nursing\">Nursing<\/a><\/p><p><a href=\"\/collections\/centura-mountain-er-copper-breckenridge-keystone-pas\" title=\"Centura Mountain ER (Copper, Breckenridge, Keystone) | PAS\">PAS<\/a><\/p><p><a href=\"\/collections\/mountain-er-imaging\" title=\"Mountain ER | Imaging\">Imaging<\/a><\/p><p><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -116,18 +116,25 @@
           "settings": {
             "collection": "centura-mountain-er-copper-breckenridge-keystone-pas"
           }
+        },
+        "1097a049-b367-48c6-a015-70701c665149": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mountain-er-imaging"
+          }
         }
       },
       "block_order": [
         "template--15892197540001__862c3060-5878-47df-a658-cdeb2efd7000-166611482363922649-0",
         "5145803d-4d95-4ca9-85a3-39df853a0d1f",
-        "89c00770-59df-40ff-a3f2-791c8b473ea0"
+        "89c00770-59df-40ff-a3f2-791c8b473ea0",
+        "1097a049-b367-48c6-a015-70701c665149"
       ],
       "settings": {
         "title": "",
         "heading_size": "h1",
         "image_ratio": "square",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "color_scheme": "background-1",
         "show_view_all": false,
         "columns_mobile": "1",
