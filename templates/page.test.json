@@ -10,7 +10,7 @@
     "20f70130-5263-412d-a1e7-4f2af5df6b9f": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<pre id=\"json\"><code>{{ shop.metafields.pb_backend.microsite.value }}<\/code><\/pre>\n<script>\nvar txt = document.getElementById(\"json\")\ndocument.getElementById(\"json\").textContent = JSON.stringify(JSON.parse(txt), null, 2);\n<\/script>",
+        "custom_liquid": "<pre id=\"json\"><\/pre>\n<script>\nvar txt = {{ shop.metafields.pb_backend.microsite.value }}\"\ndocument.getElementById(\"json\").textContent = txt;\n<\/script>",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
