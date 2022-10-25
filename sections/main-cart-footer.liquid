@@ -53,8 +53,8 @@
               </div>
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>
-                  {% render "color-warning" %}
                 <noscript>
+                  {% render "color-warning" %}
                   <button type="submit" class="cart__update-button button button--secondary" form="cart">
                     {{ 'sections.cart.update' | t }}
                   </button>
