@@ -662,6 +662,8 @@
                           {{ form | payment_button }}
                         {%- endif -%}
                     </div>
+                      {% else %}
+                        <a href="/account/login"><span>Sign In & Build your</span></a>
                       {% endif %}
                   {%- endform -%}
                 </product-form>
