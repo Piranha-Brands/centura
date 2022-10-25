@@ -44,7 +44,6 @@
             </div>
           {%- endif -%}
         </div>
-    <h1>hello</h1>
       {%- endif -%}
       <div class="drawer__header">
         <h2 class="drawer__heading">{{ 'sections.cart.title' | t }}</h2>
@@ -64,7 +63,6 @@
                       <th id="CartDrawer-ColumnQuantity" role="columnheader"><span class="visually-hidden">{{ 'sections.cart.headings.quantity' | t }}</span></th>
                     </tr>
                   </thead>
-         <h1>here</h1>
                   <tbody role="rowgroup">
                     {%- for item in cart.items -%}
                       <tr id="CartDrawer-Item-{{ item.index | plus: 1 }}" class="cart-item" role="row">
@@ -82,6 +80,7 @@
                           {% endif %}
                         </td>
 
+         <h1>here</h1>
                         <td class="cart-item__details" role="cell" headers="CartDrawer-ColumnProduct">
                           {%- if settings.show_vendor -%}
                             <p class="caption-with-letter-spacing light">{{ item.product.vendor }}</p>
