@@ -627,6 +627,8 @@
                     
                     {% render 'embroidery-input-product' %}
                     {% if customer %}
+                    {% assign ch = collection.handle %}
+                     {{ ch }}
                     <div class="product-form__buttons">
                     
                       <button
