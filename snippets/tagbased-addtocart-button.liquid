@@ -28,3 +28,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # St Anthony's and Medical Imaging%}
+{% if collection.handle contains "st-anthonys-cna"%}
+{% if customer.tags contains "St Anthony's" and customer.tags contains "Medical Imaging"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
