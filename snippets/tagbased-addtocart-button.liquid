@@ -50,3 +50,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # St Anthony's and Mental Health %}
+{% if collection.handle contains "st-anthonys-mental-health"%}
+{% if customer.tags contains "St Anthony's" and customer.tags contains "Mental Health"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
