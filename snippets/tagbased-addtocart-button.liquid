@@ -72,3 +72,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Mountain ER and PAS %}
+{% if collection.handle contains "st-anthonys-paramedics"%}
+{% if customer.tags contains "St Anthony's" and customer.tags contains "Paramedics"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
