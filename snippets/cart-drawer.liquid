@@ -180,7 +180,6 @@
                                 {{ item.original_line_price | money }}
                               </span>
                             {%- endif -%}
-{% render "color-warning" %}
 
                             {%- if item.variant.available and item.unit_price_measurement -%}
                               <div class="unit-price caption">
@@ -195,6 +194,8 @@
                               </div>
                             {%- endif -%}
                           </div>
+{% render "color-warning" %}
+                      
                         </td>
                         {% comment %}
                         <td class="cart-item__quantity" role="cell" headers="CartDrawer-ColumnQuantity">
