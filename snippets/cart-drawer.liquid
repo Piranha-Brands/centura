@@ -12,7 +12,6 @@
     visibility: hidden;
   }
 </style>
-<h1>hello world</h1>
 <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}">
   <div id="CartDrawer" class="cart-drawer">
     <div id="CartDrawer-Overlay"class="cart-drawer__overlay"></div>
@@ -53,6 +52,8 @@
         <form action="{{ routes.cart_url }}" id="CartDrawer-Form" class="cart__contents cart-drawer__form" method="post">
           <div id="CartDrawer-CartItems" class="drawer__contents js-contents">
             {%- if cart != empty -%}
+<h1>hello world</h1>
+            
               <div class="drawer__cart-items-wrapper">
                 <table class="cart-items" role="table">
                   <thead role="rowgroup">
