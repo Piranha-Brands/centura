@@ -1,5 +1,11 @@
 {% comment %} First we are going to display none add to cart for all customers {% endcomment %}
 
+<style>
+  .product-form__buttons{
+    display: none;
+  }
+</style>
+
 {% comment %} Here we show/hide add to cart button based on tags and collections handle {% endcomment %}
 {% if collection.handle contains "st-anthonys-nursing"%}
 {% if customer.tags contains "St Anthony's" and customer.tags contains "Nursing"%}
