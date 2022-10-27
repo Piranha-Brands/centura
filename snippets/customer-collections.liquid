@@ -11,6 +11,6 @@
       <br>
    {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
       <a href="{{ collections[collection_key].url  }}">  {{ collections[collection_key].title }} </a>
-      {{ collections[collection_key].image | img_url }}
+      <img src={{ collections[collection_key].image | img_url }}>
       <br>
     {%- endfor -%} 
