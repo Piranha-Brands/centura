@@ -12,7 +12,6 @@
     visibility: hidden;
   }
 </style>
-
 <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}">
   <div id="CartDrawer" class="cart-drawer">
     <div id="CartDrawer-Overlay"class="cart-drawer__overlay"></div>
@@ -52,7 +51,7 @@
       <cart-drawer-items {% if cart == empty %}class=" is-empty"{% endif %}>
         <form action="{{ routes.cart_url }}" id="CartDrawer-Form" class="cart__contents cart-drawer__form" method="post">
           <div id="CartDrawer-CartItems" class="drawer__contents js-contents">
-            {%- if cart != empty -%}
+            {%- if cart != empty -%}            
               <div class="drawer__cart-items-wrapper">
                 <table class="cart-items" role="table">
                   <thead role="rowgroup">
@@ -63,7 +62,6 @@
                       <th id="CartDrawer-ColumnQuantity" role="columnheader"><span class="visually-hidden">{{ 'sections.cart.headings.quantity' | t }}</span></th>
                     </tr>
                   </thead>
-
                   <tbody role="rowgroup">
                     {%- for item in cart.items -%}
                       <tr id="CartDrawer-Item-{{ item.index | plus: 1 }}" class="cart-item" role="row">
@@ -80,6 +78,7 @@
                             >
                           {% endif %}
                         </td>
+
 
                         <td class="cart-item__details" role="cell" headers="CartDrawer-ColumnProduct">
                           {%- if settings.show_vendor -%}
@@ -160,7 +159,6 @@
                               </svg>
                             </div>
                           </div>
-
                           <div class="cart-item__price-wrapper">
                             {%- if item.original_line_price != item.final_line_price -%}
                               <div class="cart-item__discounted-prices">
@@ -196,6 +194,7 @@
                               </div>
                             {%- endif -%}
                           </div>
+                      
                         </td>
                         {% comment %}
                         <td class="cart-item__quantity" role="cell" headers="CartDrawer-ColumnQuantity">
@@ -244,6 +243,8 @@
                 </table>
               </div>
             {%- endif -%}
+{% render "color-warning" %}
+            
             <p id="CartDrawer-LiveRegionText" class="visually-hidden" role="status"></p>
             <p id="CartDrawer-LineItemStatus" class="visually-hidden" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
           </div>
