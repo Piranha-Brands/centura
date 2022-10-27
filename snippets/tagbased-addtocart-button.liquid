@@ -116,3 +116,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Littleton and Nursing %}
+{% if collection.handle contains "centura-mountain-er-copper-breckenridge-keystone-nursing"%}
+{% if customer.tags contains "Littleton" and customer.tags contains "Nursing"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
