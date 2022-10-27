@@ -435,3 +435,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Porter and Behavioral Health %}
+{% if collection.handle contains "porter-dietician"%}
+{% if customer.tags contains "Porter" and customer.tags contains "Behavioral Health"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
