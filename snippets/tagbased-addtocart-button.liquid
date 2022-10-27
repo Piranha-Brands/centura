@@ -149,3 +149,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Littleton and Emergency Medical Imaging %}
+{% if collection.handle contains "littleton-cardiac-diagnostic"%}
+{% if customer.tags contains "Littleton" and customer.tags contains "Medical Imaging"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
