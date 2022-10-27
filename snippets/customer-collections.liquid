@@ -8,6 +8,7 @@
     </ul>
   </div> 
 {%  endcomment %}
+<div class="test">
       <br>
    {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
      <div class="user-collection-container">
@@ -16,7 +17,7 @@
      </div>
       <br>
     {%- endfor -%} 
-
+</div>
     {% style %}
   .user-collection-container {
     display: flex;
@@ -35,5 +36,9 @@
     cursor: pointer;
     transform: scale(1.01)
   }
+
+      .test {
+        border: 2px solid green;
+      }
 
     {% endstyle %}
