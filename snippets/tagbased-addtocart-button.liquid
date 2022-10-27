@@ -424,3 +424,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Porter and Patient Registration %}
+{% if collection.handle contains "porter-patient-registration"%}
+{% if customer.tags contains "Porter" and customer.tags contains "Patient Registration"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
