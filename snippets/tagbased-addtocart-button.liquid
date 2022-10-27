@@ -536,7 +536,18 @@
 {% endif %}
 
 {% # Parker and Cardiac Diagnostic %}
-{% if collection.handle contains "parker-medical-imaging"%}
+{% if collection.handle contains "parker-cardiac-diagnostic"%}
+{% if customer.tags contains "Parker" and customer.tags contains "Cardiac Diagnostic"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Parker and Cardiac Diagnostic %}
+{% if collection.handle contains "parker-cardiac-diagnostic"%}
 {% if customer.tags contains "Parker" and customer.tags contains "Cardiac Diagnostic"%}
 <style>
   .product-form__buttons{
