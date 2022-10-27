@@ -262,7 +262,7 @@
 
 {% # Porter and Emergency Nursing %}
 {% if collection.handle contains "porter-emergency-nursing"%}
-{% if customer.tags contains "Porter" and customer.tags contains "Emergency Nursing"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Emergency Nursing" %}
 <style>
   .product-form__buttons{
     display: Block;
