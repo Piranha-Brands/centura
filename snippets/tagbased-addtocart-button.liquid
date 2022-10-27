@@ -185,7 +185,7 @@
 
 {% # Castle Rock and Emergency Nursing %}
 {% if collection.handle contains "castle-rock-emergency-nursing"%}
-{% if customer.metafields.customer_fields.location == "Castle Rock" and customer.metafields.customer_fields.department == "Telemetry" %}
+{% if customer.metafields.customer_fields.location == "Castle Rock" and customer.metafields.customer_fields.department == "Emergency Nursing" %}
 <style>
   .product-form__buttons{
     display: Block;
@@ -196,7 +196,7 @@
 
 {% # Castle Rock and CAN %}
 {% if collection.handle contains "castle-rock-nursing"%}
-{% if customer.tags contains "Castle Rock" and customer.tags contains "CAN"%}
+{% if customer.metafields.customer_fields.location == "Castle Rock" and customer.metafields.customer_fields.department == "CAN" %}
 <style>
   .product-form__buttons{
     display: Block;
@@ -207,7 +207,7 @@
 
 {% # Castle Rock and Medical Imaging %}
 {% if collection.handle contains "castle-rock-medical-imaging"%}
-{% if customer.tags contains "Castle Rock" and customer.tags contains "Medical Imaging"%}
+{% if customer.metafields.customer_fields.location == "Castle Rock" and customer.metafields.customer_fields.department == "Medical Imaging" %}
 <style>
   .product-form__buttons{
     display: Block;
@@ -218,7 +218,7 @@
 
 {% # Castle Rock and Cardiac Diagnostic %}
 {% if collection.handle contains "castle-rock-cardiac-diagnostic"%}
-{% if customer.tags contains "Castle Rock" and customer.tags contains "Cardiac Diagnostic"%}
+{% if customer.metafields.customer_fields.location == "Castle Rock" and customer.metafields.customer_fields.department == "Cardiac Diagnostic" %}
 <style>
   .product-form__buttons{
     display: Block;
@@ -229,7 +229,7 @@
 
 {% # Castle Rock and Resp Therapy %}
 {% if collection.handle contains "castle-rock-resp-therapy"%}
-{% if customer.tags contains "Castle Rock" and customer.tags contains "Resp Therapy"%}
+{% if customer.metafields.customer_fields.location == "Castle Rock" and customer.metafields.customer_fields.department == "Resp Therapy" %}
 <style>
   .product-form__buttons{
     display: Block;
@@ -240,7 +240,7 @@
 
 {% # Castle Rock and Telemetry %}
 {% if collection.handle contains "castle-rock-telemetry"%}
-{% if customer.tags contains "Castle Rock" and customer.tags contains "Telemetry"%}
+{% if customer.metafields.customer_fields.location == "Castle Rock" and customer.metafields.customer_fields.department == "Telemetry" %}
 <style>
   .product-form__buttons{
     display: Block;
