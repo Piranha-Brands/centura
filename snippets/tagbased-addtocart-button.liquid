@@ -666,3 +666,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Parker and Quality Assurance %}
+{% if collection.handle contains "parker-admin-managers-rn"%}
+{% if customer.tags contains "Parker" and customer.tags contains "Quality Assurance"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
