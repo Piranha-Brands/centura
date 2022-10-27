@@ -1,0 +1,16 @@
+{%  comment %}<div class="collection-list-wrapper page-width isolate">
+    <h1>Welcome, {{ customer.first_name }} we hope you enjoy these shopping options</h1>
+
+    <ul class="collection-list contains-card contains-card-collection grid">
+      {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
+          <li class="collection-list__item grid__item">{% render 'card-collection', card_collection: collections[collection_key], extend_height: false, columns: 3 %}</li>
+      {%- endfor -%} 
+    </ul>
+  </div> 
+{%  endcomment %}
+<br>
+   {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
+      <a href="{{ collections[collection_key].url  }}">  {{ collections[collection_key].title }} </a>
+      {{ collections[collection_key].image | media_tag }}
+      <br>
+    {%- endfor -%} 
