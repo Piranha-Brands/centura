@@ -446,3 +446,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Porter and Psychiatric %}
+{% if collection.handle contains "porter-psychiatric"%}
+{% if customer.tags contains "Porter" and customer.tags contains "Psychiatric"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
