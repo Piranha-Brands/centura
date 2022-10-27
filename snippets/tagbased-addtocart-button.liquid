@@ -578,3 +578,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Parker and Neurodiagnostics/Sleep %}
+{% if collection.handle contains "parker-trauma"%}
+{% if customer.tags contains "Parker" and customer.tags contains "Neurodiagnostics/Sleep"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
