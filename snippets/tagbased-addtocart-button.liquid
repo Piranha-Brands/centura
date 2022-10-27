@@ -369,3 +369,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Porter and Sitter %}
+{% if collection.handle contains "porter-telemetry"%}
+{% if customer.tags contains "Porter" and customer.tags contains "Sitter"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
