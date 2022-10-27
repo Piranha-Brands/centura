@@ -622,3 +622,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Parker and Pharmacy %}
+{% if collection.handle contains "parker-patient-registration"%}
+{% if customer.tags contains "Parker" and customer.tags contains "Pharmacy"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
