@@ -655,3 +655,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Parker and Admin Managers RN %}
+{% if collection.handle contains "parker-wound-care"%}
+{% if customer.tags contains "Parker" and customer.tags contains "Admin Managers RN"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
