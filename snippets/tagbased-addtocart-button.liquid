@@ -457,3 +457,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Porter and Surgical Services %}
+{% if collection.handle contains "porter-surgical-services"%}
+{% if customer.tags contains "Porter" and customer.tags contains "Surgical Services"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
