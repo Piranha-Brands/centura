@@ -567,3 +567,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Parker and Telemetry %}
+{% if collection.handle contains "parker-telemetry"%}
+{% if customer.tags contains "Parker" and customer.tags contains "Telemetry"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
