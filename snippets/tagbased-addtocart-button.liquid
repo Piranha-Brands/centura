@@ -97,7 +97,7 @@
 
 {% # Mountain ER and Imaging %}
 {% if collection.handle contains "mountain-er-imaging"%}
-{% if customer.tags contains "Mountain ER" and customer.tags contains "Imaging"%}
+{% if customer.metafields.customer_fields.location == "Mountain ER" and customer.metafields.customer_fields.department == "Imaging" %}
 <style>
   .product-form__buttons{
     display: Block;
@@ -108,7 +108,7 @@
 
 {% # Mountain ER and Nursing %}
 {% if collection.handle contains "centura-mountain-er-copper-breckenridge-keystone-nursing"%}
-{% if customer.tags contains "Mountain ER" and customer.tags contains "Nursing"%}
+{% if customer.metafields.customer_fields.location == "Mountain ER" and customer.metafields.customer_fields.department == "Nursing" %}
 <style>
   .product-form__buttons{
     display: Block;
