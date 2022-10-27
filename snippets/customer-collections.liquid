@@ -6,7 +6,7 @@
 
     {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
         <span>{{ collection_key }}</span>
-        {% render 'card-collection', card_collection: collections[collection_key] %}
+        {% render 'card-collection', card_collection: collections, media_aspect_ratio: section.settings.image_ratio, columns: 3 %}
         <br>
     {%- endfor -%}
 
