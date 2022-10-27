@@ -270,3 +270,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Porter and CNA %}
+{% if collection.handle contains "porter-emergency-nursing"%}
+{% if customer.tags contains "Castle Rock" and customer.tags contains "CNA"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
