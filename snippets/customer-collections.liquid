@@ -3,4 +3,9 @@
 
 <div style="" >
     <h1>Welcome, {{ customer.first_name }} we hope you enjoy these shopping options</h1>
+
+    {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
+        <span>{{ collection_key }}</span>
+    {%- endfor -%}
+
 </div>
