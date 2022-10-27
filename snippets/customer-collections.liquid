@@ -8,7 +8,10 @@
     </ul>
   </div> 
 {%  endcomment %}
-  <h1>Welcome, {{ customer.first_name }} we hope you enjoy these shopping options!</h1>
+
+
+
+<h1 class="welcome-user">Welcome, {{ customer.first_name }} we hope you enjoy these shopping options!</h1>
 <div class="user-collection-container">
       
    {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
@@ -19,7 +22,13 @@
       
     {%- endfor -%} 
 </div>
+
+
     {% style %}
+  .welcome-user {
+    
+  }
+      
   .user-collection-card {
     display: flex;
     flex-direction: column;
