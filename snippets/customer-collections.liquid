@@ -5,7 +5,7 @@
     <h1>Welcome, {{ customer.first_name }} we hope you enjoy these shopping options</h1>
 
     {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
-        {% render 'card-collection', card_collection: collections[collection_key] %}
+        {% render 'card-collection', card_collection: collections[collection_key], extend_height: false %}
     {%- endfor -%}
 
 </div>
