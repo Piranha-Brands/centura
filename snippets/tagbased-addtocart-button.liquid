@@ -83,3 +83,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Mountain ER and CCT %}
+{% if collection.handle contains "centura-mountain-er-copper-breckenridge-keystone-cct"%}
+{% if customer.tags contains "Mountain ER" and customer.tags contains "CCT"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
