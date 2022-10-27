@@ -602,7 +602,18 @@
 {% endif %}
 
 {% # Parker and Case Management %}
-{% if collection.handle contains "parker-unit-secretary"%}
+{% if collection.handle contains "parker-case-management"%}
+{% if customer.tags contains "Parker" and customer.tags contains "Case Management"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Parker and Case Management %}
+{% if collection.handle contains "parker-case-management"%}
 {% if customer.tags contains "Parker" and customer.tags contains "Case Management"%}
 <style>
   .product-form__buttons{
