@@ -185,7 +185,7 @@
 
 {% # Castle Rock and Emergency Nursing %}
 {% if collection.handle contains "castle-rock-emergency-nursing"%}
-{% if customer.tags contains "Castle Rock" and customer.tags contains "Emergency Nursing"%}
+{% if customer.metafields.customer_fields.location == "Castle Rock" and customer.metafields.customer_fields.department == "Telemetry" %}
 <style>
   .product-form__buttons{
     display: Block;
