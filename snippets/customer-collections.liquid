@@ -11,4 +11,5 @@
 
    {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
       <a href="{{ collections[collection_key].url  }}">  {{ collections[collection_key].title }} </a>
+      <br>
     {%- endfor -%} 
