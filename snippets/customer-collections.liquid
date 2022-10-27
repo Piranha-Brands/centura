@@ -10,9 +10,19 @@
 {%  endcomment %}
       <br>
    {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
-     <div>
+     <div class="user-collection-container">
         <a href="{{ collections[collection_key].url  }}">  {{ collections[collection_key].title }} </a>
         <img src={{ collections[collection_key].image | img_url }}>
      </div>
       <br>
     {%- endfor -%} 
+
+    {% style %}
+  .user-collection-container {
+    display: flex;
+    justify-content: center;
+    border: 2px solid blue;
+  }
+
+      
+    {% endstyle %}
