@@ -226,3 +226,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Castle Rock and Resp Therapy %}
+{% if collection.handle contains "castle-rock-cardiac-diagnostic"%}
+{% if customer.tags contains "Castle Rock" and customer.tags contains "Resp Therapy"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
