@@ -5,7 +5,7 @@
 
     <ul class="collection-list contains-card contains-card-collection grid">
       {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
-          <li>{% render 'card-collection', card_collection: collections[collection_key], extend_height: false, columns: 3 %}</li>
+          <li class="collection-list__item grid__item">{% render 'card-collection', card_collection: collections[collection_key], extend_height: false, columns: 3 %}</li>
       {%- endfor -%} 
     </ul>
   </div>
