@@ -94,3 +94,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Mountain ER and Imaging %}
+{% if collection.handle contains "mountain-er-imaging"%}
+{% if customer.tags contains "Mountain ER" and customer.tags contains "Imaging"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
