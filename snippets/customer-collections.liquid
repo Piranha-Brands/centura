@@ -1,5 +1,5 @@
 
-
+{% comment %} 
 <div class="collection-list-wrapper page-width isolate">
     <h1>Welcome, {{ customer.first_name }} we hope you enjoy these shopping options</h1>
 
@@ -8,8 +8,12 @@
           <li class="collection-list__item grid__item">{% render 'card-collection', card_collection: collections[collection_key], extend_height: false, columns: 3 %}</li>
       {%- endfor -%} 
     </ul>
-  </div>
- 
+  </div> {% endcomment %}
+
+{%- for collection_key in customer.metafields.pb_backend.collections.value -%}
+    {% render 'card-collection', card_collection: collections[collection_key]%}
+{%- endfor -%}
+
 
   {% comment %} <div class="color-{{ section.settings.color_scheme }} gradient">
     <div class="collection-list-wrapper page-width ">
