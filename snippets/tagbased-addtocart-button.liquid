@@ -479,3 +479,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Porter and Radiology Special Proc. %}
+{% if collection.handle contains "porter-radiology-special-proc"%}
+{% if customer.tags contains "Porter" and customer.tags contains "Radiology Special Proc."%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
