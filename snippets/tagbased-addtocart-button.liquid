@@ -460,7 +460,7 @@
 
 {% # Porter and Surgical Services %}
 {% if collection.handle contains "porter-surgical-services"%}
-{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Emergency Nursing" %}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Surgical Services" %}
 <style>
   .product-form__buttons{
     display: Block;
@@ -471,7 +471,7 @@
 
 {% # Porter and Cath Lab %}
 {% if collection.handle contains "porter-cath-lab"%}
-{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Emergency Nursing" %}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Cath Lab" %}
 <style>
   .product-form__buttons{
     display: Block;
