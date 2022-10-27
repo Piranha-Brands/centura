@@ -391,3 +391,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Porter and Paramedic %}
+{% if collection.handle contains "porter-paramedic"%}
+{% if customer.tags contains "Porter" and customer.tags contains "Paramedic"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
