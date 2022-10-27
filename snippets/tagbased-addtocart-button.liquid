@@ -215,3 +215,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Castle Rock and Cardiac Diagnostic %}
+{% if collection.handle contains "castle-rock-medical-imaging"%}
+{% if customer.tags contains "Castle Rock" and customer.tags contains "Cardiac Diagnostic"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
