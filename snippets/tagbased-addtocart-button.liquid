@@ -523,3 +523,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Parker and CNA %}
+{% if collection.handle contains "parker-cna"%}
+{% if customer.tags contains "Parker" and customer.tags contains "CNA"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
