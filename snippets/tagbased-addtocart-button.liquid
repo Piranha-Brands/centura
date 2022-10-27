@@ -251,7 +251,7 @@
 
 {% # Porter and Nursing %}
 {% if collection.handle contains "porter-nursing"%}
-{% if customer.tags contains "Castle Rock" and customer.tags contains "Nursing"%}
+{% if customer.tags contains "Porter" and customer.tags contains "Nursing"%}
 <style>
   .product-form__buttons{
     display: Block;
@@ -262,7 +262,7 @@
 
 {% # Porter and Emergency Nursing %}
 {% if collection.handle contains "porter-emergency-nursing"%}
-{% if customer.tags contains "Castle Rock" and customer.tags contains "Emergency Nursing"%}
+{% if customer.tags contains "Porter" and customer.tags contains "Emergency Nursing"%}
 <style>
   .product-form__buttons{
     display: Block;
@@ -273,7 +273,18 @@
 
 {% # Porter and CNA %}
 {% if collection.handle contains "porter-cna"%}
-{% if customer.tags contains "Castle Rock" and customer.tags contains "CNA"%}
+{% if customer.tags contains "Porter" and customer.tags contains "CNA"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and CNA %}
+{% if collection.handle contains "porter-cna"%}
+{% if customer.tags contains "Porter" and customer.tags contains "CNA"%}
 <style>
   .product-form__buttons{
     display: Block;
