@@ -53,53 +53,6 @@
         "padding_bottom": 0
       }
     },
-    "3a2b2939-7344-41e1-834a-5ed27e32b0d4": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "template--15915182882977__3a2b2939-7344-41e1-834a-5ed27e32b0d4-166611740205d0f6d2-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Centura_LAH_500px.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--15915182882977__3a2b2939-7344-41e1-834a-5ed27e32b0d4-166611740205d0f6d2-1": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Centura_CRAHC_500px.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--15915182882977__3a2b2939-7344-41e1-834a-5ed27e32b0d4-166611740205d0f6d2-0",
-        "template--15915182882977__3a2b2939-7344-41e1-834a-5ed27e32b0d4-166611740205d0f6d2-1"
-      ],
-      "settings": {
-        "title": "Littleton & Castle Rock",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "a49710fb-3536-4903-9843-5bbda375d291": {
       "type": "multicolumn",
       "blocks": {
@@ -208,7 +161,6 @@
   "order": [
     "main",
     "ae99470f-6900-4b66-863f-0c167628695a",
-    "3a2b2939-7344-41e1-834a-5ed27e32b0d4",
     "a49710fb-3536-4903-9843-5bbda375d291",
     "862c3060-5878-47df-a658-cdeb2efd7000"
   ]
