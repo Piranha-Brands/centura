@@ -635,7 +635,18 @@
 {% endif %}
 
 {% # Parker and Women Babies %}
-{% if collection.handle contains "parker-pharmacy"%}
+{% if collection.handle contains "parker-women-babies"%}
+{% if customer.tags contains "Parker" and customer.tags contains "Women Babies"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Parker and Women Babies %}
+{% if collection.handle contains "parker-women-babies"%}
 {% if customer.tags contains "Parker" and customer.tags contains "Women Babies"%}
 <style>
   .product-form__buttons{
