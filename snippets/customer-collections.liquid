@@ -11,8 +11,8 @@
       <br>
    {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
      <div class="user-collection-container">
+        <img class="user-collection-img" src={{ collections[collection_key].image | img_url }}>
         <a href="{{ collections[collection_key].url  }}">  {{ collections[collection_key].title }} </a>
-        <img src={{ collections[collection_key].image | img_url }}>
      </div>
       <br>
     {%- endfor -%} 
@@ -23,6 +23,11 @@
     flex-direction: column;
     justify-content: center;
     border: 2px solid blue;
+  }
+
+  .user-collection-img {
+    width: 4rem;
+    height: 4rem;
   }
 
       
