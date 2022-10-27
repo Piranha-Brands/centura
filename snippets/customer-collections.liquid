@@ -1,19 +1,18 @@
 
 
-
-{% comment %} <div style="" >
+<div style="" >
     <h1>Welcome, {{ customer.first_name }} we hope you enjoy these shopping options</h1>
 
     {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
         {% render 'card-collection', card_collection: collections[collection_key], extend_height: false, columns: 3 %}
     {%- endfor -%} 
-    </div>
-    {% endcomment %}
+  </div>
+ 
 
-  <div class="color-{{ section.settings.color_scheme }} gradient">
+  {% comment %} <div class="color-{{ section.settings.color_scheme }} gradient">
     <div class="collection-list-wrapper page-width ">
       {%- unless section.settings.title == blank -%}
-        <div class="title-wrapper-with-link{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
+        <div class="title-wrapper-with-linktitle-wrapper--no-top-margin">
           <h2 id="SectionHeading-{{ section.id }}" class="collection-list-title {{ section.settings.heading_size }}">{{ section.settings.title | escape }}</h2>
     
           {%- if section.settings.show_view_all and show_mobile_slider -%}
@@ -59,4 +58,4 @@
         </div>
       {%- endif -%}
     </div>
-  </div>
+  </div> {% endcomment %}
