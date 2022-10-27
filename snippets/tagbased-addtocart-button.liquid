@@ -237,3 +237,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Castle Rock and Telemetry %}
+{% if collection.handle contains "castle-rock-resp-therapy"%}
+{% if customer.tags contains "Castle Rock" and customer.tags contains "Telemetry"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
