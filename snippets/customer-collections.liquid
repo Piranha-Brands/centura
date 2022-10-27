@@ -11,8 +11,11 @@
       <br>
    {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
      <div class="user-collection-container">
+     {% comment %}
         <img class="user-collection-img" src={{ collections[collection_key].image | img_url }} href="{{ collections[collection_key].url  }}" alt="{{ collections[collection_key].title }} image">
-        <a href="{{ collections[collection_key].url  }}">  {{ collections[collection_key].title }} </a>
+       {% endcomment %} 
+       <img class="user-collection-img" src={{ collections[collection_key].image }} href="{{ collections[collection_key].url  }}" alt="{{ collections[collection_key].title }} image">
+       <a href="{{ collections[collection_key].url  }}">  {{ collections[collection_key].title }} </a>
      </div>
       <br>
     {%- endfor -%} 
