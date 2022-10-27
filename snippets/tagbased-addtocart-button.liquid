@@ -20,7 +20,7 @@
 
 {% # St Anthony's and CNA%}
 {% if collection.handle contains "st-anthonys-cna"%}
-{% if customer.tags contains "St Anthony's" and customer.tags contains "CNA"%}
+{% if customer.metafields.customer_fields.location == "St Anthony's" and customer.metafields.customer_fields.department == "CNA" %}
 <style>
   .product-form__buttons{
     display: Block;
@@ -31,7 +31,7 @@
 
 {% # St Anthony's and Medical Imaging%}
 {% if collection.handle contains "st-anthonys-medical-imaging"%}
-{% if customer.tags contains "St Anthony's" and customer.tags contains "Medical Imaging"%}
+{% if customer.metafields.customer_fields.location == "St Anthony's" and customer.metafields.customer_fields.department == "Medical Imaging" %}
 <style>
   .product-form__buttons{
     display: Block;
@@ -42,7 +42,7 @@
 
 {% # St Anthony's and Tech %}
 {% if collection.handle contains "st-anthonys-tech"%}
-{% if customer.tags contains "St Anthony's" and customer.tags contains "Tech"%}
+{% if customer.metafields.customer_fields.location == "St Anthony's" and customer.metafields.customer_fields.department == "Tech" %}
 <style>
   .product-form__buttons{
     display: Block;
@@ -53,7 +53,7 @@
 
 {% # St Anthony's and Mental Health %}
 {% if collection.handle contains "st-anthonys-mental-health"%}
-{% if customer.tags contains "St Anthony's" and customer.tags contains "Mental Health"%}
+{% if customer.metafields.customer_fields.location == "St Anthony's" and customer.metafields.customer_fields.department == "Mental Health" %}
 <style>
   .product-form__buttons{
     display: Block;
@@ -64,7 +64,7 @@
 
 {% # St Anthony's and Paramedics %}
 {% if collection.handle contains "st-anthonys-paramedics"%}
-{% if customer.tags contains "St Anthony's" and customer.tags contains "Paramedics"%}
+{% if customer.metafields.customer_fields.location == "St Anthony's" and customer.metafields.customer_fields.department == "Paramedics" %}
 <style>
   .product-form__buttons{
     display: Block;
@@ -75,7 +75,7 @@
 
 {% # Mountain ER and PAS %}
 {% if collection.handle contains "centura-mountain-er-copper-breckenridge-keystone-pas"%}
-{% if customer.tags contains "Mountain ER" and customer.tags contains "PAS"%}
+{% if customer.metafields.customer_fields.location == "Mountain ER" and customer.metafields.customer_fields.department == "PAS" %}
 <style>
   .product-form__buttons{
     display: Block;
@@ -86,7 +86,7 @@
 
 {% # Mountain ER and CCT %}
 {% if collection.handle contains "centura-mountain-er-copper-breckenridge-keystone-cct"%}
-{% if customer.tags contains "Mountain ER" and customer.tags contains "CCT"%}
+{% if customer.metafields.customer_fields.location == "Mountain ER" and customer.metafields.customer_fields.department == "CCT" %}
 <style>
   .product-form__buttons{
     display: Block;
