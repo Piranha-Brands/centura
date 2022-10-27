@@ -5,7 +5,7 @@
       {% assign collection = collections[collection_key] %}
       {% comment %} <a href="{{ collections[collection_key].url  }}">  {{ collections[collection_key].title }} </a> {% endcomment %}
       {{ collections[collection_key].image | media_tag }}
-      <li><a href="{{collection.url}}" class="{% if link_type == 'mobile'  %}menu-drawer{% else %}header{% endif %}__menu-item list-menu__item link link--text focus-inset caption-large">collection.title</a></li>
+      <li><a href="{{ collection.url }}" class="{% if link_type == 'mobile'  %}menu-drawer{% else %}header{% endif %}__menu-item list-menu__item link link--text focus-inset caption-large">{{ collection.title }}</a></li>
     {%- endfor -%} 
     
 {% else %}
