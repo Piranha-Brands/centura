@@ -133,6 +133,7 @@
 
       {% comment %}Exteneded Account details for microsite{% endcomment %}
       <h2 style="font-size: 14px;" >Additional Profile Details</h2>
+      {% render additional-profile-details %}
 {% comment %}
       <table>
         <tr><th>Hospital Location</th><td>{{ customer.metafields.customer_fields.location.value }}</td></tr>
@@ -141,7 +142,7 @@
       </table>
     </div>
 {% endcomment %}  
-      {% render additional-profile-details %}
+      
   </div>
 </div>
 
