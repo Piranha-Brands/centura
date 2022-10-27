@@ -9,7 +9,7 @@
 {% comment %} Here we show/hide add to cart button based on tags and collections handle {% endcomment %}
 {% # St Anthony's and Nursing%}
 {% if collection.handle contains "st-anthonys-nursing"%}
-{% if customer.tags contains "St Anthony's" and customer.tags contains "Nursing"%}
+{% if customer.metafields.customer_fields.location == "St Anthony's" and customer.metafields.customer_fields.location == "Nursing" %}
 <style>
   .product-form__buttons{
     display: Block;
