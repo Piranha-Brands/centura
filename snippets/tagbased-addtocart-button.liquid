@@ -414,9 +414,9 @@
 {% endif %}
 {% endif %}
 
-{% # Porter and LPN %}
-{% if collection.handle contains "porter-lpn"%}
-{% if customer.tags contains "Porter" and customer.tags contains "LPN"%}
+{% # Porter and Patient Registration %}
+{% if collection.handle contains "porter-patient-registration"%}
+{% if customer.tags contains "Porter" and customer.tags contains "Patient Registration"%}
 <style>
   .product-form__buttons{
     display: Block;
