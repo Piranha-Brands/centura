@@ -380,3 +380,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Porter and Lab %}
+{% if collection.handle contains "porter-lab"%}
+{% if customer.tags contains "Porter" and customer.tags contains "Lab"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
