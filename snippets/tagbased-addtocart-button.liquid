@@ -251,7 +251,7 @@
 
 {% # Porter and Nursing %}
 {% if collection.handle contains "porter-nursing"%}
-{% if customer.tags contains "Porter" and customer.tags contains "Nursing"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Nursing" %}
 <style>
   .product-form__buttons{
     display: Block;
