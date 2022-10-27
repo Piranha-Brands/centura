@@ -15,7 +15,7 @@
         <img class="user-collection-img" src={{ collections[collection_key].image | img_url }} href="{{ collections[collection_key].url  }}" alt="{{ collections[collection_key].title }} image">
        {% endcomment %} 
        <img class="user-collection-img" src={{ collections[collection_key].image }} href="{{ collections[collection_key].url  }}" alt="{{ collections[collection_key].title }} image">
-       <a href="{{ collections[collection_key].url  }}">  {{ collections[collection_key].title }} </a>
+       <a href="{{ collections[collection_key].url  }}">  {{ collections[collection_key].title }}  {{ collections[collection_key].image }} </a>
      </div>
       <br>
     {%- endfor -%} 
