@@ -130,7 +130,7 @@
 
 {% # Littleton and Emergency Nursing %}
 {% if collection.handle contains "littleton-emergency-nursing"%}
-{% if customer.tags contains "Littleton" and customer.tags contains "Emergency Nursing"%}
+{% if customer.metafields.customer_fields.location == "Littleton" and customer.metafields.customer_fields.department == "Nursing" %}
 <style>
   .product-form__buttons{
     display: Block;
@@ -141,7 +141,7 @@
 
 {% # Littleton and Emergency Cardiac Diagnostic %}
 {% if collection.handle contains "littleton-cardiac-diagnostic"%}
-{% if customer.tags contains "Littleton" and customer.tags contains "Cardiac Diagnostic"%}
+{% if customer.metafields.customer_fields.location == "Littleton" and customer.metafields.customer_fields.department == "Nursing" %}
 <style>
   .product-form__buttons{
     display: Block;
@@ -152,7 +152,7 @@
 
 {% # Littleton and Emergency Medical Imaging %}
 {% if collection.handle contains "littleton-medical-imaging"%}
-{% if customer.tags contains "Littleton" and customer.tags contains "Medical Imaging"%}
+{% if customer.metafields.customer_fields.location == "Littleton" and customer.metafields.customer_fields.department == "Nursing" %}
 <style>
   .product-form__buttons{
     display: Block;
@@ -163,7 +163,7 @@
 
 {% # Littleton and Emergency Resp Therapy %}
 {% if collection.handle contains "littleton-resp-therapy"%}
-{% if customer.tags contains "Littleton" and customer.tags contains "Resp Therapy"%}
+{% if customer.metafields.customer_fields.location == "Littleton" and customer.metafields.customer_fields.department == "Nursing" %}
 <style>
   .product-form__buttons{
     display: Block;
@@ -174,7 +174,7 @@
 
 {% # Littleton and Emergency Telemetry %}
 {% if collection.handle contains "littleton-telemetry"%}
-{% if customer.tags contains "Littleton" and customer.tags contains "Telemetry"%}
+{% if customer.metafields.customer_fields.location == "Littleton" and customer.metafields.customer_fields.department == "Emergency Telemetry" %}
 <style>
   .product-form__buttons{
     display: Block;
