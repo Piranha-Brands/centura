@@ -358,3 +358,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Porter and ED CCT %}
+{% if collection.handle contains "porter-ed-cct"%}
+{% if customer.tags contains "Porter" and customer.tags contains "ED CCT"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
