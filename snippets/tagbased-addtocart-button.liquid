@@ -402,3 +402,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Porter and LPN %}
+{% if collection.handle contains "porter-lpn"%}
+{% if customer.tags contains "Porter" and customer.tags contains "LPN"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
