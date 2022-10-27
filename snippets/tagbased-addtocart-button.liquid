@@ -160,3 +160,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Littleton and Emergency Resp Therapy %}
+{% if collection.handle contains "littleton-medical-imaging"%}
+{% if customer.tags contains "Littleton" and customer.tags contains "Resp Therapy"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
