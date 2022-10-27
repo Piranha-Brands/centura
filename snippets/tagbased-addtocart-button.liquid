@@ -127,3 +127,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Littleton and Emergency Nursing %}
+{% if collection.handle contains "littleton-emergency-nursing"%}
+{% if customer.tags contains "Littleton" and customer.tags contains "Emergency Nursing"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
