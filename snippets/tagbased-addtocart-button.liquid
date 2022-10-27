@@ -589,3 +589,14 @@
 </style>
 {% endif %}
 {% endif %}
+
+{% # Parker and Unit Secretary %}
+{% if collection.handle contains "parker-neurodiagnostics-sleep"%}
+{% if customer.tags contains "Parker" and customer.tags contains "Unit Secretary"%}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
