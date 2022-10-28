@@ -33,16 +33,19 @@
 
     .welcome-user {
     font-size: 2rem;
-  }
-  .welcome-message {
-    font-size: 1.5rem;
-  }
+    }
+    
+    .welcome-message {
+      font-size: 1.5rem;
+    }
+    
     .additional-address-main-container {
     display: flex;
     justify-content: center;
     align-content: center;
     margin-top: 1.5rem;
-  }
+    }
+    
     .additional-address-container {
     display: flex;
     flex-direction: row;
@@ -52,11 +55,13 @@
     border: 1px solid grey;
     width: 70%;
     align-items: center;
-  }
+    }
+    
     .additional-details {
       height: fit-content;
       font-size: 1.5rem;
     }
+    
     .customer-detail {
       font-weight: 600;
       font-size: 1.5rem;
@@ -91,6 +96,11 @@
       gap: 8rem;
       margin-top: 1.5rem;
     }
+    
+    @media only screen and (max-width: 1200px) {
+    .user-collection-container {
+      display: block;
+  }
     
   {% endstyle %}
   
