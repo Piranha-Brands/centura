@@ -4,9 +4,9 @@
   <p>Hospital Location:   {{ customer.metafields.customer_fields.location.value }}</p>
   {% endif %}
   {% if customer.metafields.customer_fields.department.value != ""  %}
-  <p>Department:   customer.metafields.customer_fields.department.value }}</p>
+  <p>Department:  {{ customer.metafields.customer_fields.department.value }}</p>
   {% endif %}
   {% if customer.metafields.customer_fields.employment.value != ""  %}
-  <p>Employment:   customer.metafields.customer_fields.employment.value }}</p>
+  <p>Employment:  {{ customer.metafields.customer_fields.employment.value }}</p>
   {% endif %}
 </div>
