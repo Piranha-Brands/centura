@@ -17,6 +17,7 @@
 </style>
 {% endif %}
 
+{% comment %}
 {% # St Anthony's and CNA%}
 {% if collection.handle contains "st-anthonys-cna"%}
 {% if customer.metafields.customer_fields.location == "St Anthony's" and customer.metafields.customer_fields.department == "CNA" %}
@@ -677,3 +678,4 @@
 {% endif %}
 {% endif %}
 
+{% endcomment %}
