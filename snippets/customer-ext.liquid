@@ -21,7 +21,7 @@
   <div class="user-collection-container">      
      {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
        <div class="user-collection-card">
-          <a href="{{ collections[collection_key].url  }}"> Shop {{ collections[collection_key].title }}s </a>
+          <a class="button button--full-width button--secondary" href="{{ collections[collection_key].url  }}"> Shop {{ collections[collection_key].title }}s </a>
        </div>
         
     {%- endfor -%} 
