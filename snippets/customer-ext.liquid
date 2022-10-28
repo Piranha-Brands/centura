@@ -91,9 +91,7 @@
 
   <div class="additional-address-container">
     {% if customer.metafields.customer_fields.location.value != blank %} 
-    <div class="test">
     <p class="additional-details">Hospital Location: <span class="customer-detail">{{ customer.metafields.customer_fields.location.value }}</span></p>
-    </div>
     {% endif %}
     {% if customer.metafields.customer_fields.department.value != blank  %}
     {% if customer.metafields.customer_fields.employment.value != blank  %}
