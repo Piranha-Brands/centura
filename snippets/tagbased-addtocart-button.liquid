@@ -1,5 +1,4 @@
-{% comment %} First, hide add to cart for all customers {% endcomment %}
-
+{% comment %} Hide add to cart for all customers {% endcomment %}
 
 <style>
   .product-form__buttons{
@@ -9,15 +8,16 @@
 
 {% comment %} Show/hide add to cart button based on metafields and collections handle {% endcomment %}
 {% # St Anthony's and Nursing%}
-{% if customer.pb_backend.collections.value == collection.handle %}
+{% if collection.handle contains "st-anthonys-nursing"%}
+{% if customer.metafields.customer_fields.location == "St Anthony's" and customer.metafields.customer_fields.department == "Nursing" %}
 <style>
   .product-form__buttons{
     display: Block;
   }
 </style>
 {% endif %}
+{% endif %}
 
-{% comment %}
 {% # St Anthony's and CNA%}
 {% if collection.handle contains "st-anthonys-cna"%}
 {% if customer.metafields.customer_fields.location == "St Anthony's" and customer.metafields.customer_fields.department == "CNA" %}
@@ -677,5 +677,3 @@
 </style>
 {% endif %}
 {% endif %}
-
-{% endcomment %}
