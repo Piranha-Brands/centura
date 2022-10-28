@@ -35,6 +35,41 @@
   .customer-detail {
     font-weight: 600;
   }
+
+  {% comment %} cards {% endcomment %}
+  .welcome-user {
+    text-align: center;
+  }
+      
+  .user-collection-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+/*     margin-top: 2rem; */
+  }
+
+  .user-collection-img {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .user-collection-card > a {
+    margin: 3rem;
+  }
+
+  .user-collection-img:hover {
+    cursor: pointer;
+    transform: scale(1.01)
+  }
+
+  .user-collection-container {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    margin-top: 1.5rem;
+  }
+  
 {% endstyle %}
 
 {% else %}
