@@ -96,8 +96,6 @@
     </div>
     {% endif %}
     {% if customer.metafields.customer_fields.department.value != blank  %}
-    <p class="additional-details">Department: <span class="customer-detail">{{ customer.metafields.customer_fields.department.value }}</span></p>
-    {% endif %}
     {% if customer.metafields.customer_fields.employment.value != blank  %}
     <p class="additional-details">Employment: <span class="customer-detail">{{ customer.metafields.customer_fields.employment.value }}</span></p>
     {% endif %}
@@ -105,6 +103,8 @@
     <p class="additional-details">Color Options: <span class="customer-detail">{{ customer.metafields.customer_fields.colors.value | join: ', ' }}</span></p>
     {% endif %}
     <p class="additional-details">Product Options: <span class="customer-detail">Tops, Pants, Jackets</span></p>
+    <p class="additional-details">Department: <span class="customer-detail">{{ customer.metafields.customer_fields.department.value }}</span></p>
+    {% endif %}
   </div>
   
   {% style %}
