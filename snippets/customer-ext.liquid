@@ -1,6 +1,7 @@
 {% if usage %} 
 
-  <h1 class="welcome-user">Welcome, {{  customer.first_name }}!  Shop from your personalized Centura product and color option below. </h1>
+  <h1 class="welcome-user">Welcome, {{  customer.first_name }}!  Shop from your personalized Centura product and color option below. 
+    <br><span class="welcome-message">Below are the products and color Centura has assigned to your role.  Simply select the collection to shop from first and add your favorite products to your cart.</span></h1>
   <div class="user-collection-container">      
      {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
        <div class="user-collection-card">
@@ -29,6 +30,13 @@
 </div>
   
   {% style %}
+
+    .welcome-user {
+    font-size: 3rem;
+  }
+  .welcome-message {
+    font-size: 1.5rem;
+  }
     .additional-address-main-container {
     display: flex;
     justify-content: center;
