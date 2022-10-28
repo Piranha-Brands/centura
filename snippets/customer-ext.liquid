@@ -98,7 +98,7 @@
     {% if customer.metafields.customer_fields.colors.value != blank  %}
     <p class="additional-details">Color Options: <span class="customer-detail">{{ customer.metafields.customer_fields.colors.value | join: ', ' }}</span></p>
     {% endif %}
-    {% if customer.metafiles.customer_fields.product_types != blank %}
+    {% if customer.metafiles.customer_fields.product_types.value != blank %}
     <p class="additional-details">Product Options: <span class="customer-detail">{{ customer.metafiles.customer_fields.product_types.value | join: ', ' }}</span></p>
     {% endif %}
     {% if customer.metafields.customer_fields.location.value != blank %} 
