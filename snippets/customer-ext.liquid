@@ -1,27 +1,3 @@
-{% comment %}
-<h1>{{ usage }}</h1>
-
-{% style %}
-  .additional-address-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 4rem;
-    align-content: center;
-    margin-top: 1.5rem;
-  }
-  .additional-details {
-    margin-top: 5rem;
-    height: fit-content;
-  }
-  .customer-detail {
-    font-weight: 600;
-  }
-
-{% endstyle %}
-
-{% endcomment %}
-
 {% if usage != collection %} 
 
   <h1 class="welcome-user">Welcome, {{ customer.first_name }}! We hope you enjoy these shopping options!</h1>
@@ -54,7 +30,6 @@
   
 {% style %}
   .additional-address-container {
-/*     border: 2px solid red; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -63,16 +38,14 @@
     margin-top: 0rem;
   }
   .additional-details {
-/*     margin-top: 5rem; */
     height: fit-content;
   }
   .customer-detail {
     font-weight: 600;
   }
 
-                      {% comment %} cards {% endcomment %}
+  {% comment %} cards {% endcomment %}
 
-  
   .welcome-user {
     text-align: center;
   }
@@ -107,9 +80,6 @@
   }
   
 {% endstyle %}
-
-
-
   
 {% else %}
 
