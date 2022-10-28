@@ -1,6 +1,6 @@
 <h5>Additional Profile Details</h5>
 <div class="Additional-address-container">
-  {% if {{ customer.metafields.customer_fields.location.value.length != "" }} %} 
+  {% if {{ customer.metafields.customer_fields.location.value != "" }} %} 
   <p>Hospital Location:   {{ customer.metafields.customer_fields.location.value }}</p>
   {% endif %}
   {% if {{ customer.metafields.customer_fields.department.value != "" }}  %}
