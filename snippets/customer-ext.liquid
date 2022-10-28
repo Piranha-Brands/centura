@@ -59,8 +59,22 @@
 
 
 <h1 class="welcome-user">Welcome, {{ customer.first_name }}! We hope you enjoy these shopping options!</h1>
-<div class="user-collection-container">
-      
+<div class="additional-address-container">
+  {% if customer.metafields.customer_fields.location.value != blank %} 
+  <p class="additional-details">Hospital Location: <span class="customer-detail">{{ customer.metafields.customer_fields.location.value }}</span></p>
+  {% endif %}
+  {% if customer.metafields.customer_fields.department.value != blank  %}
+  <p class="additional-details">Department: <span class="customer-detail">{{ customer.metafields.customer_fields.department.value }}</span></p>
+  {% endif %}
+  {% if customer.metafields.customer_fields.employment.value != blank  %}
+  <p class="additional-details">Employment: <span class="customer-detail">{{ customer.metafields.customer_fields.employment.value }}</span></p>
+  {% endif %}
+  {% if customer.metafields.customer_fields.colors.value != blank  %}
+  <p class="additional-details">Color Options: <span class="customer-detail">{{ customer.metafields.customer_fields.colors.value | join: ', ' }}</span></p>
+  {% endif %}
+</div>
+
+<div class="user-collection-container">      
    {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
      <div class="user-collection-card">
         <img class="user-collection-img" src={{ collections[collection_key].image | image_url }} href="{{ collections[collection_key].url  }}" alt="{{ collections[collection_key].title }} image">
