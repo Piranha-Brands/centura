@@ -4,15 +4,16 @@
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "{% render 'customer-ext', usage:'collection' %}",
-        "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "color_scheme": "background-2",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
-        "show_collection_description": true,
+        "show_collection_description": false,
         "show_collection_image": false,
         "color_scheme": "background-1"
       }
