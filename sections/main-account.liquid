@@ -131,9 +131,10 @@
         {{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
       </a>
       <h2 style="font-size: 14px;" >Additional Profile Details</h2>
-        <div class="additional-container">
+
+      {% comment %}
            {% render additional-profile-details %}
-        </div>
+      {% endcomment %}
                          
 
       {% comment %}Exteneded Account details for microsite{% endcomment %}
@@ -150,14 +151,9 @@
   </div>
 </div>
 
-                          {% style %}
-                            .additional-container {
-                              display: flex;
-                              flex-direction: reverse-flex;
-                              border: 1px solid red;
-                            }
-                          {% endstyle %}
 
+
+                          
 {% schema %}
 {
   "name": "t:sections.main-account.name",
