@@ -1,4 +1,4 @@
-<h3>Additional Profile Details</h3>
+{% comment %} <h3>Additional Profile Details</h3> {% endcomment %}
 <div class="additional-address-container">
   {% if customer.metafields.customer_fields.location.value != blank %} 
   <p class="additional-details">Hospital Location: {{ customer.metafields.customer_fields.location.value }}</p>
