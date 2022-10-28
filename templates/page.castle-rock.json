@@ -211,7 +211,7 @@
     "be5a0176-bb80-4129-8708-552053bfd8c2": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{% render 'customer-ext', usage:'collection' %}",
+        "custom_liquid": "{% render 'customer-ext' %}",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
