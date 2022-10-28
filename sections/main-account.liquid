@@ -140,7 +140,12 @@
 
       {% comment %}Exteneded Account details for microsite{% endcomment %}
 
-
+      <table>
+        <tr><th>Hospital Location</th><td>{{ customer.metafields.customer_fields.location.value }}</td></tr>
+        <tr><th>Department</th><td>{{ customer.metafields.customer_fields.department.value }}</td></tr>
+        <tr><th>Employment</th><td>{{ customer.metafields.customer_fields.employment.value }}</td></tr>
+      </table>
+    </div>
 
 
       
