@@ -102,6 +102,7 @@
     },
     "a49710fb-3536-4903-9843-5bbda375d291": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "a00befa6-834f-4e4b-b62d-15102e7e9410": {
           "type": "column",
@@ -147,6 +148,7 @@
     },
     "862c3060-5878-47df-a658-cdeb2efd7000": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "template--15892197540001__862c3060-5878-47df-a658-cdeb2efd7000-166611482363922649-0": {
           "type": "featured_collection",
@@ -205,6 +207,15 @@
         "padding_top": 0,
         "padding_bottom": 36
       }
+    },
+    "be5a0176-bb80-4129-8708-552053bfd8c2": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'customer-ext', usage:'collection' %}",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -212,6 +223,7 @@
     "ae99470f-6900-4b66-863f-0c167628695a",
     "3a2b2939-7344-41e1-834a-5ed27e32b0d4",
     "a49710fb-3536-4903-9843-5bbda375d291",
-    "862c3060-5878-47df-a658-cdeb2efd7000"
+    "862c3060-5878-47df-a658-cdeb2efd7000",
+    "be5a0176-bb80-4129-8708-552053bfd8c2"
   ]
 }
