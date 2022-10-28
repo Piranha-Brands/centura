@@ -1,4 +1,4 @@
-{% comment %} First, we hide add to cart for all customers {% endcomment %}
+{% comment %} First, hide add to cart for all customers {% endcomment %}
 
 <style>
   .product-form__buttons{
@@ -6,7 +6,7 @@
   }
 </style>
 
-{% comment %} Here we show/hide add to cart button based on metafields and collections handle {% endcomment %}
+{% comment %} Show/hide add to cart button based on metafields and collections handle {% endcomment %}
 {% # St Anthony's and Nursing%}
 {% if collection.handle contains "st-anthonys-nursing"%}
 {% if customer.metafields.customer_fields.location == "St Anthony's" and customer.metafields.customer_fields.department == "Nursing" %}
