@@ -21,34 +21,6 @@
 {% endstyle %}
 
 
-
-
-
-{%  comment %}<div class="collection-list-wrapper page-width isolate">
-    <h1>Welcome, {{ customer.first_name }} we hope you enjoy these shopping options</h1>
-  <h1>Hello world</h1>
- {% if customer.metafields.customer_fields.location.value != blank %} 
-  <p class="additional-details">Hospital Location: <span class="customer-detail">{{ customer.metafields.customer_fields.location.value }}</span></p>
-  {% endif %}
-  {% if customer.metafields.customer_fields.department.value != blank  %}
-  <p class="additional-details">Department: <span class="customer-detail">{{ customer.metafields.customer_fields.department.value }}</span></p>
-  {% endif %}
-  {% if customer.metafields.customer_fields.employment.value != blank  %}
-  <p class="additional-details">Employment: <span class="customer-detail">{{ customer.metafields.customer_fields.employment.value }}</span></p>
-  {% endif %}
-  {% if customer.metafields.customer_fields.colors.value != blank  %}
-  <p class="additional-details">Color Options: <span class="customer-detail">{{ customer.metafields.customer_fields.colors.value | join: ', ' }}</span></p>
-  {% endif %}
-    <ul class="collection-list contains-card contains-card-collection grid">
-      {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
-          <li class="collection-list__item grid__item">{% render 'card-collection', card_collection: collections[collection_key], extend_height: false, columns: 3 %}</li>
-      {%- endfor -%} 
-    </ul>
-  </div> 
-{%  endcomment %}
-
-
-
 <h1 class="welcome-user">Welcome, {{ customer.first_name }}! We hope you enjoy these shopping options!</h1>
 <div class="additional-address-container">
   <h5>User detail:</h5>
