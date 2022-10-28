@@ -1,5 +1,5 @@
 <h3>Additional Profile Details</h3>
-<div class="Additional-address-container">
+<div class="additional-address-container">
   {% if customer.metafields.customer_fields.location.value != blank %} 
   <p>Hospital Location: {{ customer.metafields.customer_fields.location.value }}</p>
   {% endif %}
@@ -15,8 +15,8 @@
 </div>
 
 {% style %}
-  Additional-address-container {
-    border: 0.8px grey;
+  .additional-address-container {
+    border: 0.8px solid grey;
   }
 {% endstyle %}
 
