@@ -9,4 +9,11 @@
   {% if customer.metafields.customer_fields.employment.value != ""  %}
   <p>Employment:  {{ customer.metafields.customer_fields.employment.value }}</p>
   {% endif %}
+  {% if customer.metafields.customer_fields.color.value != ""  %}
+  <p>Color options:  {{ customer.metafields.customer_fields.color.value }}</p>
+  {% endif %}
 </div>
+
+{% style %}
+
+{% endstyle %}
