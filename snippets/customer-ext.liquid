@@ -90,7 +90,7 @@
   </div>
 
   <div class="additional-address-container">
-    
+    <h1>{{ customer.metafields.customer_fields.colors.value }}</h1>
     {% if customer.metafields.customer_fields.department.value != blank  %}
     {% if customer.metafields.customer_fields.employment.value != blank  %}
     <p class="additional-details">Employment: <span class="customer-detail">{{ customer.metafields.customer_fields.employment.value }}</span></p>
