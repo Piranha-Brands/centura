@@ -1,0 +1,217 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "ae99470f-6900-4b66-863f-0c167628695a": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--15892197540001__ae99470f-6900-4b66-863f-0c167628695a-1666114850b2108126-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Castle  Rock",
+            "heading_size": "h1"
+          }
+        },
+        "template--15892197540001__ae99470f-6900-4b66-863f-0c167628695a-1666114850b2108126-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Castle Rock uses a color-by-discipline program to increase patient satisfaction. To see the product selection for your discipline, please choose your specified color below.  You can find your specific color in your account profile or in your welcome email. <\/p><p><\/p><p><em> <\/em><em><strong>Please Note: We recommend purchasing scrub tops and bottoms from the same Brand. Products from different Brands may not be an exact color match. (ie: Cherokee tops and Cherokee pants will match, but a Grey's Anatomy top and Cherokee pants may not. <\/strong><\/em><\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--15892197540001__ae99470f-6900-4b66-863f-0c167628695a-1666114850b2108126-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15892197540001__ae99470f-6900-4b66-863f-0c167628695a-1666114850b2108126-0",
+        "template--15892197540001__ae99470f-6900-4b66-863f-0c167628695a-1666114850b2108126-1",
+        "template--15892197540001__ae99470f-6900-4b66-863f-0c167628695a-1666114850b2108126-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Logo_CRAHC_Primary_RGB_800px_f7f228b0-e060-4c9a-8504-bab2a7e64399.png",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "3a2b2939-7344-41e1-834a-5ed27e32b0d4": {
+      "type": "multicolumn",
+      "disabled": true,
+      "blocks": {
+        "template--15915182882977__3a2b2939-7344-41e1-834a-5ed27e32b0d4-166611740205d0f6d2-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Centura_LAH_500px.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--15915182882977__3a2b2939-7344-41e1-834a-5ed27e32b0d4-166611740205d0f6d2-1": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Centura_CRAHC_500px.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15915182882977__3a2b2939-7344-41e1-834a-5ed27e32b0d4-166611740205d0f6d2-0",
+        "template--15915182882977__3a2b2939-7344-41e1-834a-5ed27e32b0d4-166611740205d0f6d2-1"
+      ],
+      "settings": {
+        "title": "Littleton & Castle Rock",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "a49710fb-3536-4903-9843-5bbda375d291": {
+      "type": "multicolumn",
+      "blocks": {
+        "a00befa6-834f-4e4b-b62d-15102e7e9410": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "text": "<p><a href=\"\/collections\/castle-rock-cardiac-diagnostic\" title=\"Castle Rock | Cardiac Diagnostic\">Cardiac Diagnostic<\/a><\/p><p><a href=\"\/collections\/castle-rock-emergency-nursing\" title=\"Castle Rock | Emergency Nursing\">Emergency Nursing<\/a><\/p><p><a href=\"\/collections\/castle-rock-medical-imaging\" title=\"Castle Rock | Medical Imaging\">Medical Imaging<\/a><\/p><p><a href=\"\/collections\/castle-rock-nursing\" title=\"Castle Rock | Nursing\">Nursing<\/a><\/p><p><a href=\"\/collections\/castle-rock-resp-therapy\" title=\"Castle Rock | Resp Therapy\">Resp Therapy<\/a><\/p><p><a href=\"\/collections\/castle-rock-telemetry\" title=\"Castle Rock | Telemetry\">Telemetry<\/a><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "524a2df8-0205-4451-bc4c-c3e9f5578d3e": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "a00befa6-834f-4e4b-b62d-15102e7e9410",
+        "524a2df8-0205-4451-bc4c-c3e9f5578d3e"
+      ],
+      "settings": {
+        "title": "Shop By Color",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 1,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "862c3060-5878-47df-a658-cdeb2efd7000": {
+      "type": "collection-list",
+      "blocks": {
+        "template--15892197540001__862c3060-5878-47df-a658-cdeb2efd7000-166611482363922649-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "castle-rock-cardiac-diagnostic"
+          }
+        },
+        "5145803d-4d95-4ca9-85a3-39df853a0d1f": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "castle-rock-emergency-nursing"
+          }
+        },
+        "89c00770-59df-40ff-a3f2-791c8b473ea0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "castle-rock-medical-imaging"
+          }
+        },
+        "43d7b55b-6d23-46d0-956c-f607aea5034e": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "castle-rock-nursing"
+          }
+        },
+        "4ce5d6a2-1a40-44f0-a726-6d80a6094f3b": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "castle-rock-resp-therapy"
+          }
+        },
+        "template--15892197540001__862c3060-5878-47df-a658-cdeb2efd7000-166611482363922649-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "castle-rock-telemetry"
+          }
+        }
+      },
+      "block_order": [
+        "template--15892197540001__862c3060-5878-47df-a658-cdeb2efd7000-166611482363922649-0",
+        "5145803d-4d95-4ca9-85a3-39df853a0d1f",
+        "89c00770-59df-40ff-a3f2-791c8b473ea0",
+        "43d7b55b-6d23-46d0-956c-f607aea5034e",
+        "4ce5d6a2-1a40-44f0-a726-6d80a6094f3b",
+        "template--15892197540001__862c3060-5878-47df-a658-cdeb2efd7000-166611482363922649-1"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 5,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ae99470f-6900-4b66-863f-0c167628695a",
+    "3a2b2939-7344-41e1-834a-5ed27e32b0d4",
+    "a49710fb-3536-4903-9843-5bbda375d291",
+    "862c3060-5878-47df-a658-cdeb2efd7000"
+  ]
+}

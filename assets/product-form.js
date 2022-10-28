@@ -79,7 +79,8 @@ if (!customElements.get('product-form')) {
           let data = Object.fromEntries(formData.entries());
           let datax = {"items":[]};
           datax["items"].push({"id":data["id"],"quantity":data["quantity"],"properties":{
-            "_embroidery-variant":data["embroidery-variant"]
+            "_embroidery-variant":data["embroidery-variant"],
+            "Embroidery":data['embroidery-sku']
           }});
           datax["items"].push({"id":data["embroidery-variant"],"quantity":data["quantity"],"properties":{
             "_variant":data["id"]
