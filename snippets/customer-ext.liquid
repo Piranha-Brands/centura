@@ -1,6 +1,6 @@
 {% if usage %} 
 
-  <h1 class="welcome-user">Welcome, {{ customer.first_name }}! We hope you enjoy these shopping options!</h1>
+  <h3 class="welcome-user">Welcome, {{ customer.first_name }}! We hope you enjoy these shopping options!</h3>
   <div class="additional-address-container">
     {% if customer.metafields.customer_fields.location.value != blank %} 
     <div class="test">
@@ -77,7 +77,7 @@
   
 {% else %}
 
-  <h1 class="welcome-user">Welcome, {{ customer.first_name }}! We hope you enjoy these shopping options!</h1>
+  <h3 class="welcome-user">Welcome, {{ customer.first_name }}! We hope you enjoy these shopping options!</h3>
   <div class="additional-address-container">
     {% if customer.metafields.customer_fields.location.value != blank %} 
     <div class="test">
