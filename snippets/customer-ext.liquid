@@ -90,7 +90,6 @@
   </div>
 
   <div class="additional-address-container">
-    <h1>{{ customer.metafields.customer_fields.colors.value }}</h1>
     {% if customer.metafields.customer_fields.department.value != blank  %}
     {% if customer.metafields.customer_fields.employment.value != blank  %}
     <p class="additional-details">Employment: <span class="customer-detail">{{ customer.metafields.customer_fields.employment.value }}</span></p>
@@ -98,8 +97,8 @@
     {% if customer.metafields.customer_fields.colors.value != blank  %}
     <p class="additional-details">Color Options: <span class="customer-detail">{{ customer.metafields.customer_fields.colors.value | join: ', ' }}</span></p>
     {% endif %}
-    {% if customer.metafiles.customer_fields.product_types.value != blank %}
-    <p class="additional-details">Product Options: <span class="customer-detail">{{ customer.metafiles.customer_fields.product_types.value | join: ', ' }}</span></p>
+    {% if customer.metafields.customer_fields.product_types.value != blank %}
+    <p class="additional-details">Product Options: <span class="customer-detail">{{ customer.metafields.customer_fields.product_types.value | join: ', ' }}</span></p>
     {% endif %}
     {% if customer.metafields.customer_fields.location.value != blank %} 
     <p class="additional-details">Hospital Location: <span class="customer-detail">{{ customer.metafields.customer_fields.location.value }}</span></p>
