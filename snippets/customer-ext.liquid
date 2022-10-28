@@ -90,6 +90,7 @@
   </div>
 
   <div class="additional-address-container">
+    <h3>Your Uniform Program: </h3>
     {% if customer.metafields.customer_fields.colors.value != blank  %}
     <p class="additional-details">Color Options: <span class="customer-detail">{{ customer.metafields.customer_fields.colors.value | join: ', ' }}</span></p>
     {% endif %}
