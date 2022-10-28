@@ -101,6 +101,15 @@
     .user-collection-container {
       display: block;
   }
+     @media only screen and (max-width: 600px) {
+  .additional-address-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 0rem;
+  }
+}
     
   {% endstyle %}
   
@@ -223,14 +232,14 @@
   .user-collection-container {
     display: block;
   }
-      @media only screen and (max-width: 600px) {
-  .additional-address-container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    gap: 0rem;
-  }
+   @media only screen and (max-width: 600px) {
+    .additional-address-container {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      gap: 0rem;
+    }
   }
     {% endstyle %}
 {% endif %}
