@@ -7,7 +7,7 @@
 </style>
 
 {% comment %} Here we show/hide add to cart button based on metafields and collections handle {% endcomment %}
-{% if customer.metafields.customer_fields.colors.galaxy == product.metafields.base_color.galaxy %}
+{% if customer.metafields.customer_fields.colors.galaxy contains product.metafields.base_color.galaxy %}
 <style>
   .product-form__buttons{
     display: Block;
