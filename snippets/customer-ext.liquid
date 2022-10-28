@@ -88,7 +88,7 @@
         
       {%- endfor -%} 
   </div>
-
+<div class="additional-address-main-container">
   <div class="additional-address-container">
     <h3>Your Uniform Program: </h3>
     {% if customer.metafields.customer_fields.colors.value != blank  %}
@@ -104,7 +104,8 @@
     <p class="additional-details">Department: <span class="customer-detail">{{ customer.metafields.customer_fields.department.value }}</span></p>
     {% endif %}
   </div>
-  
+</div>
+
   {% style %}
   .additional-address-container {
     display: flex;
