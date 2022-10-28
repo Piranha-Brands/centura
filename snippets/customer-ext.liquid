@@ -88,7 +88,7 @@
 {% else %}
 
   <h1 class="welcome-user">Welcome, {{  customer.first_name }}!  Shop from your personalized Centura product and color option below. </h1>
-  <h3>Below are the products and color Centura has assigned to your role.  Simply select the collection to shop from first and add your favorite products to your cart.</h3>
+  <h3 class="welcome-message">Below are the products and color Centura has assigned to your role.  Simply select the collection to shop from first and add your favorite products to your cart.</h3>
   <div class="user-collection-container">      
      {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
        <div class="user-collection-card">
