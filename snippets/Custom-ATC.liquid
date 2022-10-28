@@ -1,0 +1,679 @@
+{% comment %} First, we hide add to cart for all customers {% endcomment %}
+
+<style>
+  .product-form__buttons{
+    display: none;
+  }
+</style>
+
+{% comment %} Here we show/hide add to cart button based on tags and collections handle {% endcomment %}
+{% # St Anthony's and Nursing%}
+{% if collection.handle contains "st-anthonys-nursing"%}
+{% if customer.metafields.customer_fields.location == "St Anthony's" and customer.metafields.customer_fields.department == "Nursing" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # St Anthony's and CNA%}
+{% if collection.handle contains "st-anthonys-cna"%}
+{% if customer.metafields.customer_fields.location == "St Anthony's" and customer.metafields.customer_fields.department == "CNA" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # St Anthony's and Medical Imaging%}
+{% if collection.handle contains "st-anthonys-medical-imaging"%}
+{% if customer.metafields.customer_fields.location == "St Anthony's" and customer.metafields.customer_fields.department == "Medical Imaging" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # St Anthony's and Tech %}
+{% if collection.handle contains "st-anthonys-tech"%}
+{% if customer.metafields.customer_fields.location == "St Anthony's" and customer.metafields.customer_fields.department == "Tech" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # St Anthony's and Mental Health %}
+{% if collection.handle contains "st-anthonys-mental-health"%}
+{% if customer.metafields.customer_fields.location == "St Anthony's" and customer.metafields.customer_fields.department == "Mental Health" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # St Anthony's and Paramedics %}
+{% if collection.handle contains "st-anthonys-paramedics"%}
+{% if customer.metafields.customer_fields.location == "St Anthony's" and customer.metafields.customer_fields.department == "Paramedics" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Mountain ER and PAS %}
+{% if collection.handle contains "centura-mountain-er-copper-breckenridge-keystone-pas"%}
+{% if customer.metafields.customer_fields.location == "Mountain ER" and customer.metafields.customer_fields.department == "PAS" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Mountain ER and CCT %}
+{% if collection.handle contains "centura-mountain-er-copper-breckenridge-keystone-cct"%}
+{% if customer.metafields.customer_fields.location == "Mountain ER" and customer.metafields.customer_fields.department == "CCT" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Mountain ER and Imaging %}
+{% if collection.handle contains "mountain-er-imaging"%}
+{% if customer.metafields.customer_fields.location == "Mountain ER" and customer.metafields.customer_fields.department == "Imaging" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Mountain ER and Nursing %}
+{% if collection.handle contains "centura-mountain-er-copper-breckenridge-keystone-nursing"%}
+{% if customer.metafields.customer_fields.location == "Mountain ER" and customer.metafields.customer_fields.department == "Nursing" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Littleton and Nursing %}
+{% if collection.handle contains "littleton-nursing"%}
+{% if customer.metafields.customer_fields.location == "Littleton" and customer.metafields.customer_fields.department == "Nursing" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Littleton and Emergency Nursing %}
+{% if collection.handle contains "littleton-emergency-nursing"%}
+{% if customer.metafields.customer_fields.location == "Littleton" and customer.metafields.customer_fields.department == "Emergency Nursing" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Littleton and Cardiac Diagnostic %}
+{% if collection.handle contains "littleton-cardiac-diagnostic"%}
+{% if customer.metafields.customer_fields.location == "Littleton" and customer.metafields.customer_fields.department == "Cardiac Diagnostic" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Littleton and Medical Imaging %}
+{% if collection.handle contains "littleton-medical-imaging"%}
+{% if customer.metafields.customer_fields.location == "Littleton" and customer.metafields.customer_fields.department == "Medical Imaging" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Littleton and Resp Therapy %}
+{% if collection.handle contains "littleton-resp-therapy"%}
+{% if customer.metafields.customer_fields.location == "Littleton" and customer.metafields.customer_fields.department == "Resp Therapy" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Littleton and Telemetry %}
+{% if collection.handle contains "littleton-telemetry"%}
+{% if customer.metafields.customer_fields.location == "Littleton" and customer.metafields.customer_fields.department == "Telemetry" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Castle Rock and Emergency Nursing %}
+{% if collection.handle contains "castle-rock-emergency-nursing"%}
+{% if customer.metafields.customer_fields.location == "Castle Rock" and customer.metafields.customer_fields.department == "Emergency Nursing" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Castle Rock and CAN %}
+{% if collection.handle contains "castle-rock-nursing"%}
+{% if customer.metafields.customer_fields.location == "Castle Rock" and customer.metafields.customer_fields.department == "CAN" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Castle Rock and Medical Imaging %}
+{% if collection.handle contains "castle-rock-medical-imaging"%}
+{% if customer.metafields.customer_fields.location == "Castle Rock" and customer.metafields.customer_fields.department == "Medical Imaging" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Castle Rock and Cardiac Diagnostic %}
+{% if collection.handle contains "castle-rock-cardiac-diagnostic"%}
+{% if customer.metafields.customer_fields.location == "Castle Rock" and customer.metafields.customer_fields.department == "Cardiac Diagnostic" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Castle Rock and Resp Therapy %}
+{% if collection.handle contains "castle-rock-resp-therapy"%}
+{% if customer.metafields.customer_fields.location == "Castle Rock" and customer.metafields.customer_fields.department == "Resp Therapy" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Castle Rock and Telemetry %}
+{% if collection.handle contains "castle-rock-telemetry"%}
+{% if customer.metafields.customer_fields.location == "Castle Rock" and customer.metafields.customer_fields.department == "Telemetry" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and Nursing %}
+{% if collection.handle contains "porter-nursing"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Nursing" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and Emergency Nursing %}
+{% if collection.handle contains "porter-emergency-nursing"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Emergency Nursing" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and CNA %}
+{% if collection.handle contains "porter-cna"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "CNA" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and Medical Imaging %}
+{% if collection.handle contains "porter-medical-imaging"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Medical Imaging" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and Cardiac Diagnostic %}
+{% if collection.handle contains "porter-cardiac-diagnostic"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Cardiac Diagnostic" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and Resp Therapy %}
+{% if collection.handle contains "porter-resp-therapy"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Resp Therapy" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and Transplant %}
+{% if collection.handle contains "porter-transplant"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Transplant" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and Pharmacy %}
+{% if collection.handle contains "porter-pharmacy"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Pharmacy" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and OT/PT/ST %}
+{% if collection.handle contains "porter-ot-pt-st"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "OT/PT/ST" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and ED CCT %}
+{% if collection.handle contains "porter-ed-cct"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "ED CCT" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and Telemetry %}
+{% if collection.handle contains "porter-telemetry"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Telemetry" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and Sitter %}
+{% if collection.handle contains "porter-sitter"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Sitter" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and Lab %}
+{% if collection.handle contains "porter-lab"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Lab" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and Paramedic %}
+{% if collection.handle contains "porter-paramedic"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Paramedic" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and LPN %}
+{% if collection.handle contains "porter-lpn"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "LPN" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and Patient Registration %}
+{% if collection.handle contains "porter-patient-registration"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Patient Registration" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and Dietician %}
+{% if collection.handle contains "porter-dietician"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Dietician" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and Behavioral Health %}
+{% if collection.handle contains "porter-behavioral-health"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Behavioral Health" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and Psychiatric %}
+{% if collection.handle contains "porter-psychiatric"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Psychiatric" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and Surgical Services %}
+{% if collection.handle contains "porter-surgical-services"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Surgical Services" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and Cath Lab %}
+{% if collection.handle contains "porter-cath-lab"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Cath Lab" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and Radiology Special Proc. %}
+{% if collection.handle contains "porter-radiology-special-proc"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Radiology Special Proc." %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Porter and Transplant MA %}
+{% if collection.handle contains "porter-transplant-ma"%}
+{% if customer.metafields.customer_fields.location == "Porter" and customer.metafields.customer_fields.department == "Transplant MA" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Parker and Emergency Nursing %}
+{% if collection.handle contains "parker-emergency-nursing"%}
+{% if customer.metafields.customer_fields.location == "Parker" and customer.metafields.customer_fields.department == "Emergency Nursing" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Parker and CNA %}
+{% if collection.handle contains "parker-cna"%}
+{% if customer.metafields.customer_fields.location == "Parker" and customer.metafields.customer_fields.department == "CNA" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Parker and Medical Imaging %}
+{% if collection.handle contains "parker-medical-imaging"%}
+{% if customer.metafields.customer_fields.location == "Parker" and customer.metafields.customer_fields.department == "Medical Imaging" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Parker and Cardiac Diagnostic %}
+{% if collection.handle contains "parker-cardiac-diagnostic"%}
+{% if customer.metafields.customer_fields.location == "Parker" and customer.metafields.customer_fields.department == "Cardiac Diagnostic" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Parker and Resp Therapy %}
+{% if collection.handle contains "parker-resp-therapy"%}
+{% if customer.metafields.customer_fields.location == "Parker" and customer.metafields.customer_fields.department == "Resp Therapy" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Parker and Telemetry %}
+{% if collection.handle contains "parker-telemetry"%}
+{% if customer.metafields.customer_fields.location == "Parker" and customer.metafields.customer_fields.department == "Telemetry" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Parker and Trauma %}
+{% if collection.handle contains "parker-trauma"%}
+{% if customer.metafields.customer_fields.location == "Parker" and customer.metafields.customer_fields.department == "Trauma" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Parker and Neurodiagnostics/Sleep %}
+{% if collection.handle contains "parker-neurodiagnostics-sleep"%}
+{% if customer.metafields.customer_fields.location == "Parker" and customer.metafields.customer_fields.department == "Neurodiagnostics/Sleep" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Parker and Unit Secretary %}
+{% if collection.handle contains "parker-unit-secretary"%}
+{% if customer.metafields.customer_fields.location == "Parker" and customer.metafields.customer_fields.department == "Unit Secretary" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Parker and Case Management %}
+{% if collection.handle contains "parker-case-management"%}
+{% if customer.metafields.customer_fields.location == "Parker" and customer.metafields.customer_fields.department == "Case Management" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Parker and Patient Registration %}
+{% if collection.handle contains "parker-patient-registration"%}
+{% if customer.metafields.customer_fields.location == "Parker" and customer.metafields.customer_fields.department == "Patient Registration" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Parker and Pharmacy %}
+{% if collection.handle contains "parker-pharmacy"%}
+{% if customer.metafields.customer_fields.location == "Parker" and customer.metafields.customer_fields.department == "Pharmacy" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Parker and Women Babies %}
+{% if collection.handle contains "parker-women-babies"%}
+{% if customer.metafields.customer_fields.location == "Parker" and customer.metafields.customer_fields.department == "Women Babies" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Parker and Wound Care %}
+{% if collection.handle contains "parker-wound-care"%}
+{% if customer.metafields.customer_fields.location == "Parker" and customer.metafields.customer_fields.department == "Wound Care" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Parker and Admin Managers RN %}
+{% if collection.handle contains "parker-admin-managers-rn"%}
+{% if customer.metafields.customer_fields.location == "Parker" and customer.metafields.customer_fields.department == "Admin Managers RN" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
+
+{% # Parker and Quality Assurance %}
+{% if collection.handle contains "parker-quality-assurance"%}
+{% if customer.metafields.customer_fields.location == "Parker" and customer.metafields.customer_fields.department == "Quality Assurance" %}
+<style>
+  .product-form__buttons{
+    display: Block;
+  }
+</style>
+{% endif %}
+{% endif %}
