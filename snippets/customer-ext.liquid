@@ -25,56 +25,56 @@
         <a href="{{ collections[collection_key].url  }}"> Shop {{ collections[collection_key].title }}s </a>
      </div>
       
-    {%- endfor -%} 
+  {%- endfor -%} 
 </div>
   
-{% style %}
-  .additional-address-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 4rem;
-    align-content: center;
-    margin-top: 0rem;
-  }
-  .additional-details {
-    height: fit-content;
-  }
-  .customer-detail {
-    font-weight: 600;
-  }
-
-  {% comment %} cards {% endcomment %}
-
-  .welcome-user {
-    text-align: center;
-  }
-      
-  .user-collection-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .user-collection-img {
-    width: 10rem;
-    height: 10rem;
-  }
-
-  .user-collection-img:hover {
-    cursor: pointer;
-    transform: scale(1.01)
-  }
-
-  .user-collection-container {
-    display: flex;
-    justify-content: center;
-    gap: 8rem;
-    margin-top: 1.5rem;
-  }
+  {% style %}
+    .additional-address-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 4rem;
+      align-content: center;
+      margin-top: 0rem;
+    }
+    .additional-details {
+      height: fit-content;
+    }
+    .customer-detail {
+      font-weight: 600;
+    }
   
-{% endstyle %}
+    {% comment %} cards {% endcomment %}
+  
+    .welcome-user {
+      text-align: center;
+    }
+        
+    .user-collection-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .user-collection-img {
+      width: 10rem;
+      height: 10rem;
+    }
+  
+    .user-collection-img:hover {
+      cursor: pointer;
+      transform: scale(1.01)
+    }
+  
+    .user-collection-container {
+      display: flex;
+      justify-content: center;
+      gap: 8rem;
+      margin-top: 1.5rem;
+    }
+    
+  {% endstyle %}
   
 {% else %}
 
