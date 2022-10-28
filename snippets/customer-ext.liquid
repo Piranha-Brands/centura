@@ -223,6 +223,13 @@
   .user-collection-container {
     display: block;
   }
+      @media only screen and (max-width: 600px) {
+  .user-collection-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
   }
     {% endstyle %}
 {% endif %}
