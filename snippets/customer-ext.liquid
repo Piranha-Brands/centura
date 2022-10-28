@@ -95,7 +95,7 @@
   {% endstyle %}
   
 {% else %}
-
+<div class="test">
   <h1 class="welcome-user">Welcome, {{  customer.first_name }}!  Shop from your personalized Centura product and color option below. 
     <br><span class="welcome-message">Below are the products and color Centura has assigned to your role.  Simply select the collection to shop from first and add your favorite products to your cart.</span></h1>
   <div class="user-collection-container">      
@@ -123,6 +123,7 @@
     <p class="additional-details">Department: <span class="customer-detail">{{ customer.metafields.customer_fields.department.value }}</span></p>
     {% endif %}
   </div>
+</div>
 </div>
 
   {% style %}
@@ -181,7 +182,6 @@
 
   .user-collection-card > a {
     margin: 3rem;
-    border: 2px solid blue;
   }
 
   .user-collection-img:hover {
