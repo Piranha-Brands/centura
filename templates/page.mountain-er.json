@@ -141,7 +141,7 @@
     "d413fbc4-c026-4248-9d63-cd2e04186995": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{% if customer %}\n\n{% render 'additional-profile-details' %}\n\n{% render 'customer-collections' %}\n\n{% else %}\n\n\n\n{% endif %}",
+        "custom_liquid": "{% if customer %}\n\n{% render 'customer-ext' %}\n\n{% else %}\n\n\n\n{% endif %}",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
