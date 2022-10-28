@@ -12,7 +12,7 @@
   <p class="additional-details">Employment: <span class="customer-detail">{{ customer.metafields.customer_fields.employment.value }}</span></p>
   {% endif %}
   {% if customer.metafields.customer_fields.colors.value != blank  %}
-  <p class="additional-details">Color Options: <span class="customer-detail">{{ customer.metafields.customer_fields.colors.value }}</span></p>
+  <p class="additional-details">Color Options: <span class="customer-detail">{{ customer.metafields.customer_fields.colors.value | join: ', ' }}</span></p>
   {% endif %}
 </div>
 
