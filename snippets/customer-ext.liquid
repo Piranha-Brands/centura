@@ -1,4 +1,4 @@
-
+<h1>{{ usage }}</h1>
 
 {% style %}
   .additional-address-container {
@@ -19,7 +19,28 @@
 
 {% endstyle %}
 
-<h1>{{ usage }}</h1>
+{% if usage == collection %} 
+{% style %}
+  .additional-address-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    align-content: center;
+    margin-top: 1.5rem;
+    border: 2px solid red;
+  }
+  .additional-details {
+    margin-top: 5rem;
+    height: fit-content;
+  }
+  .customer-detail {
+    font-weight: 600;
+  }
+
+{% endstyle %}
+{% endif %}
+
 
 <h1 class="welcome-user">Welcome, {{ customer.first_name }}! We hope you enjoy these shopping options!</h1>
 <div class="additional-address-container">
