@@ -6,7 +6,7 @@
   {% if customer.metafields.customer_fields.department.value != ""  %}
   <p>Department: {{ customer.metafields.customer_fields.department.value }}</p>
   {% endif %}
-  {% if customer.metafields.customer_fields.employment.value.length > 1  %}
+  {% if customer.metafields.customer_fields.employment.value.size > 1  %}
   <p>Employment: {{ customer.metafields.customer_fields.employment.value }}</p>
   {% endif %}
   {% if customer.metafields.customer_fields.colors.value != ""  %}
