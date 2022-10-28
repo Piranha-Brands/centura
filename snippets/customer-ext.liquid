@@ -4,14 +4,12 @@
   .additional-address-container {
     display: flex;
     flex-direction: row;
-    border: 1px solid blue;
     justify-content: center;
     gap: 4rem;
     align-content: center;
   }
   .additional-details {
     margin-top: 5rem;
-    border: 1px solid green;
     height: fit-content;
   }
 
@@ -20,7 +18,7 @@
 
 <h1 class="welcome-user">Welcome, {{ customer.first_name }}! We hope you enjoy these shopping options!</h1>
 <div class="additional-address-container">
-  <h5>User detail:</h5>
+<!--   <h5>User detail:</h5> -->
   {% if customer.metafields.customer_fields.location.value != blank %} 
   <div class="test">
   <p class="additional-details">Hospital Location: <span class="customer-detail">{{ customer.metafields.customer_fields.location.value }}</span></p>
