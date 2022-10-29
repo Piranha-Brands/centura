@@ -9,6 +9,11 @@
 {% assign handle = collection.handle %}
 {% for collections in customer.metafields.pb_backend.collections.value %}
 {% if collections == handle %}
-  <h>Yes Works</h>
+  <style>
+  .product-form__buttons{
+    display: block;
+  }
+</style>
+
 {% endif %}
 {% endfor %}
