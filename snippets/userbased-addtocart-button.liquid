@@ -5,6 +5,7 @@
   }
 </style>
 
+{% comment %} Get product collection handle in variable {% endcomment %}
 {% assign handle = collection.handle %}
 {% for collections in customer.metafields.pb_backend.collections.value %}
 {% if collections == handle %}
