@@ -11,10 +11,8 @@
 {% endif %}
 ccc
 {% assign values = customer.metafields.pb_backend.collections %}
-{% for value in values %}
-  {{value}} {{ collection.handle }}
-{% endfor %}
 
-{% for collections in product.metafields.pb_backend.collections.value %}
+
+{% for collections in customer.metafields.pb_backend.collections.value %}
 <li>{{ collections }}</li>
 {% endfor %}
