@@ -7,6 +7,7 @@
 
 {% comment %} Get product collection handle in variable {% endcomment %}
 {% assign handle = collection.handle %}
+{% comment %} Metafields value loop because values are more than one, also to check if any value match then it will show add to cart button {% endcomment %}
 {% for collections in customer.metafields.pb_backend.collections.value %}
 {% if collections == handle %}
   <style>
@@ -14,6 +15,5 @@
     display: block;
   }
 </style>
-
 {% endif %}
 {% endfor %}
