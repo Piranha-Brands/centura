@@ -12,5 +12,5 @@
 
 {% assign values = customer.metafields.pb_backend.collections %}
 {% for value in values %}
-  {{value}}
+  {{value}} {{ collection.handle }}
 {% endfor %}
