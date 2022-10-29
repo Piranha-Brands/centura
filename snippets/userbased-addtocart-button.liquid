@@ -6,7 +6,8 @@
   }
 </style>
 
-{{ collection.handle }}
+{% assign handle = collection.handle %}
 {% for collections in customer.metafields.pb_backend.collections.value %}
-<li>{{ collections }}</li>
+{% if collections ==  %}
+{% endif %}
 {% endfor %}
