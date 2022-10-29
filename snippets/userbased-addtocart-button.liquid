@@ -6,12 +6,6 @@
   }
 </style>
 
-{% if customer.metafields.pb_backend.collections %}
-
-{% endif %}
-ccc
-{% assign values = customer.metafields.pb_backend.collections %}
-
 
 {% for collections in customer.metafields.pb_backend.collections.value %}
 <li>{{ collections }}</li>
