@@ -8,6 +8,7 @@
 
 {% assign handle = collection.handle %}
 {% for collections in customer.metafields.pb_backend.collections.value %}
-{% if collections ==  %}
+{% if collections == handle %}
+  <h>Yes Works</h>
 {% endif %}
 {% endfor %}
