@@ -25,6 +25,8 @@
     </a>
   </div>
 
+  
+
   <div>
     <div>
       <h2>{{ 'customer.orders.title' | t }}</h2>
@@ -119,27 +121,21 @@
     </div>
 
     <div>
-      <h2>{{ 'customer.account.details' | t }} <br><a href="/account?view=edit" style="font-size: 14px;">Edit account</a></h2>
+  <h2>{{ 'customer.account.details' | t }} <br><a href="/account?view=edit" style="font-size: 14px;">Edit account</a></h2>
 
       {{ customer.default_address | format_address }}
 
       <a href="{{ routes.account_addresses_url }}">
         {{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
-      </a>
-
-      {% comment %}Exteneded Account details for microsite{% endcomment %}
-      <h2 style="font-size: 14px;" >Additional Profile Details</h2>
-      <table>
-        <tr><th>Hospital Location</th><td>{{ customer.metafields.customer_fields.location.value }}</td></tr>
-        <tr><th>Department</th><td>{{ customer.metafields.customer_fields.department.value }}</td></tr>
-        <tr><th>Employment</th><td>{{ customer.metafields.customer_fields.employment.value }}</td></tr>
-      </table>
+      </a>      
     </div>
-    
-
+      
   </div>
 </div>
 
+
+
+                          
 {% schema %}
 {
   "name": "t:sections.main-account.name",

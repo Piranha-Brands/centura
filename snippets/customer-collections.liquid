@@ -1,0 +1,61 @@
+{%  comment %}<div class="collection-list-wrapper page-width isolate">
+    <h1>Welcome, {{ customer.first_name }} we hope you enjoy these shopping options</h1>
+
+    <ul class="collection-list contains-card contains-card-collection grid">
+      {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
+          <li class="collection-list__item grid__item">{% render 'card-collection', card_collection: collections[collection_key], extend_height: false, columns: 3 %}</li>
+      {%- endfor -%} 
+    </ul>
+  </div> 
+{%  endcomment %}
+
+
+
+<h1 class="welcome-user">Welcome, {{ customer.first_name }}! We hope you enjoy these shopping options!</h1>
+<div class="user-collection-container">
+      
+   {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
+     <div class="user-collection-card">
+        <img class="user-collection-img" src={{ collections[collection_key].image | image_url }} href="{{ collections[collection_key].url  }}" alt="{{ collections[collection_key].title }} image">
+        <a href="{{ collections[collection_key].url  }}">  {{ collections[collection_key].title }} </a>
+     </div>
+      
+    {%- endfor -%} 
+</div>
+
+
+    {% style %}
+  .welcome-user {
+    text-align: center;
+  }
+      
+  .user-collection-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .user-collection-img {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .user-collection-card > a {
+    margin: 3rem;
+  }
+
+  .user-collection-img:hover {
+    cursor: pointer;
+    transform: scale(1.01)
+  }
+
+  .user-collection-container {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    margin-top: 3rem;
+  }
+
+    {% endstyle %}
