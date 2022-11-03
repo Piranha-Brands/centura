@@ -1,0 +1,244 @@
+{% if usage %} 
+
+  <h1 class="welcome-user">Welcome, {{  customer.first_name }}!  Shop from your personalized Centura product and color option below. 
+    <br><span class="welcome-message">Below are the products and color Centura has assigned to your role.  Simply select the collection to shop from first and add your favorite products to your cart.</span></h1>
+  <div class="user-collection-container">      
+     {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
+       <div class="user-collection-card">
+          <a class="button button--full-width button--secondary" href="{{ collections[collection_key].url  }}"> Shop {{ collections[collection_key].title }}s </a>
+       </div>
+        
+    {%- endfor -%} 
+  </div>
+
+  <div class="additional-address-main-container">
+  <div class="additional-address-container">
+    <h3>Your Uniform Program: </h3>
+    {% if customer.metafields.customer_fields.colors.value != blank  %}
+    <p class="additional-details">Color Options: <span class="customer-detail">{{ customer.metafields.customer_fields.colors.value | join: ', ' }}</span></p>
+    {% endif %}
+    {% if customer.metafields.customer_fields.product_types.value != blank %}
+    <p class="additional-details">Product Options: <span class="customer-detail">{{ customer.metafields.customer_fields.product_types.value | join: ', ' }}</span></p>
+    {% endif %}
+    {% if customer.metafields.customer_fields.location.value != blank %} 
+    <p class="additional-details">Hospital Location: <span class="customer-detail">{{ customer.metafields.customer_fields.location.value }}</span></p>
+    {% endif %}
+    {% if customer.metafields.customer_fields.department.value != blank  %}
+    <p class="additional-details">Department: <span class="customer-detail">{{ customer.metafields.customer_fields.department.value }}</span></p>
+    {% endif %}
+  </div>
+</div>
+  
+  {% style %}
+
+    .welcome-user {
+    font-size: 2rem;
+    }
+    
+    .welcome-message {
+      font-size: 1.5rem;
+    }
+    
+    .additional-address-main-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1.5rem;
+    }
+    
+    .additional-address-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    align-content: center;
+    border: 1px solid grey;
+    width: 70%;
+    align-items: center;
+    }
+    
+    .additional-details {
+      height: fit-content;
+      font-size: 1.5rem;
+    }
+    
+    .customer-detail {
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+  
+    {% comment %} cards {% endcomment %}
+  
+    .welcome-user {
+      text-align: center;
+    }
+        
+    .user-collection-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .user-collection-img {
+      width: 10rem;
+      height: 10rem;
+    }
+  
+    .user-collection-img:hover {
+      cursor: pointer;
+      transform: scale(1.01)
+    }
+  
+    .user-collection-container {
+      display: flex;
+      justify-content: center;
+      gap: 8rem;
+      margin-top: 1.5rem;
+    }
+    
+    @media only screen and (max-width: 1200px) {
+    .user-collection-container {
+      display: block;
+  }
+     @media only screen and (max-width: 600px) {
+  .additional-address-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 0rem;
+  }
+}
+    
+  {% endstyle %}
+  
+{% else %}
+<div class="test">
+  <h1 class="welcome-user">Welcome, {{  customer.first_name }}!  Shop from your personalized Centura product and color option below. 
+    <br><span class="welcome-message">Below are the products and color Centura has assigned to your role.  Simply select the collection to shop from first and add your favorite products to your cart.</span></h1>
+  <div class="user-collection-container">      
+     {%- for collection_key in customer.metafields.pb_backend.collections.value -%}
+       <div class="user-collection-card">
+          <img class="user-collection-img" src={{ collections[collection_key].image | image_url }} href="{{ collections[collection_key].url  }}" alt="{{ collections[collection_key].title }} image">
+          <a class="button button--secondary" href="{{ collections[collection_key].url  }}">  Shop {{ collections[collection_key].title }}s </a>
+       </div>
+        
+      {%- endfor -%} 
+  </div>
+<div class="additional-address-main-container">
+  <div class="additional-address-container">
+    <h3>Your Uniform Program: </h3>
+    {% if customer.metafields.customer_fields.colors.value != blank  %}
+    <p class="additional-details">Color Options: <span class="customer-detail">{{ customer.metafields.customer_fields.colors.value | join: ', ' }}</span></p>
+    {% endif %}
+    {% if customer.metafields.customer_fields.product_types.value != blank %}
+    <p class="additional-details">Product Options: <span class="customer-detail">{{ customer.metafields.customer_fields.product_types.value | join: ', ' }}</span></p>
+    {% endif %}
+    {% if customer.metafields.customer_fields.location.value != blank %} 
+    <p class="additional-details">Hospital Location: <span class="customer-detail">{{ customer.metafields.customer_fields.location.value }}</span></p>
+    {% endif %}
+    {% if customer.metafields.customer_fields.department.value != blank  %}
+    <p class="additional-details">Department: <span class="customer-detail">{{ customer.metafields.customer_fields.department.value }}</span></p>
+    {% endif %}
+  </div>
+</div>
+</div>
+
+  {% style %}
+  .welcome-user {
+    font-size: 3rem;
+  }
+    
+  .test {
+    height: 100%;
+    width: 100%;
+  }
+  .welcome-message {
+    font-size: 1.5rem;
+  }
+    
+  .additional-address-main-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1.5rem;
+  }
+    
+  .additional-address-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    align-content: center;
+    border: 1px solid grey;
+    box-shadow: rgba(1, 0, 0, 0.4);
+    width: 80%;
+    align-items: center;
+  }
+    
+  .additional-details {
+    margin-top: 5rem;
+    height: fit-content;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+    
+  .customer-detail {
+    font-weight: 600;
+  }
+
+                      {% comment %} cards {% endcomment %}
+  .welcome-user {
+    text-align: center;
+  }
+    
+  .user-collection-container {
+    width: 100%;
+    height: 100%;
+  }
+      
+  .user-collection-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .user-collection-img {
+    width: 20rem;
+    height: 20rem;
+    margin-top: 2rem;
+  }
+
+  .user-collection-card > a {
+    margin: 3rem;
+  }
+
+  .user-collection-img:hover {
+    cursor: pointer;
+    transform: scale(1.01)
+  }
+
+  .user-collection-container {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    margin-top: 1.5rem;
+  }
+    @media only screen and (max-width: 1200px) {
+  .user-collection-container {
+    display: block;
+  }
+   @media only screen and (max-width: 600px) {
+    .additional-address-container {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      gap: 0rem;
+    }
+  }
+    {% endstyle %}
+{% endif %}
+

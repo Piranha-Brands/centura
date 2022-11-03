@@ -21,7 +21,7 @@
         "template--15892197540001__ae99470f-6900-4b66-863f-0c167628695a-1666114850b2108126-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Castle Rock uses a color-by-discipline program to increase patient satisfaction. To see the product selection for your discipline, please choose your department below. <\/p><p><\/p><p><em> Please Note: We recommend purchasing scrub tops and bottoms from the same collection. Products from different collections may not be an exact color match.<\/em><\/p>",
+            "text": "<p>Castle Rock uses a color-by-discipline program to increase patient satisfaction. <\/p><p><\/p><p><strong>To see your product selection, please <\/strong><a href=\"\/account\" title=\"\/account\"><strong>Login<\/strong><\/a><\/p><p><\/p><p><em> Please Note: We recommend purchasing scrub tops and bottoms from the same collection. Products from different collections may not be an exact color match.<\/em><\/p>",
             "text_style": "body"
           }
         },
@@ -68,6 +68,7 @@
       "blocks": {
         "a00befa6-834f-4e4b-b62d-15102e7e9410": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "",
             "text": "<p><a href=\"\/collections\/castle-rock-cardiac-diagnostic\" title=\"Castle Rock | Cardiac Diagnostic\">Cardiac Diagnostic<\/a><\/p><p><a href=\"\/collections\/castle-rock-emergency-nursing\" title=\"Castle Rock | Emergency Nursing\">Emergency Nursing<\/a><\/p><p><a href=\"\/collections\/castle-rock-medical-imaging\" title=\"Castle Rock | Medical Imaging\">Medical Imaging<\/a><\/p><p><a href=\"\/collections\/castle-rock-nursing\" title=\"Castle Rock | Nursing\">Nursing<\/a><\/p><p><a href=\"\/collections\/castle-rock-resp-therapy\" title=\"Castle Rock | Resp Therapy\">Resp Therapy<\/a><\/p><p><a href=\"\/collections\/castle-rock-telemetry\" title=\"Castle Rock | Telemetry\">Telemetry<\/a><\/p>",
@@ -77,6 +78,7 @@
         },
         "524a2df8-0205-4451-bc4c-c3e9f5578d3e": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "",
             "text": "",
@@ -90,7 +92,7 @@
         "524a2df8-0205-4451-bc4c-c3e9f5578d3e"
       ],
       "settings": {
-        "title": "Departments",
+        "title": "Shop By Color",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -108,6 +110,7 @@
     },
     "862c3060-5878-47df-a658-cdeb2efd7000": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "template--15892197540001__862c3060-5878-47df-a658-cdeb2efd7000-166611482363922649-0": {
           "type": "featured_collection",
@@ -166,6 +169,15 @@
         "padding_top": 0,
         "padding_bottom": 36
       }
+    },
+    "be5a0176-bb80-4129-8708-552053bfd8c2": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% if customer %}\n\n{% render 'customer-ext' %}\n\n{% endif %}",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -173,6 +185,7 @@
     "ae99470f-6900-4b66-863f-0c167628695a",
     "6ed62894-1a7c-45e1-b878-5736062f551d",
     "a49710fb-3536-4903-9843-5bbda375d291",
-    "862c3060-5878-47df-a658-cdeb2efd7000"
+    "862c3060-5878-47df-a658-cdeb2efd7000",
+    "be5a0176-bb80-4129-8708-552053bfd8c2"
   ]
 }

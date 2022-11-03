@@ -21,7 +21,7 @@
         "template--15906665988257__e418d921-7cfd-47e2-8709-33cd4be731ed-1665553342fd718106-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Porter uses a color-by-discipline program to increase patient satisfaction. To see the product selection for your discipline, please choose your department below. <\/p><p><\/p><p><em> Please Note: We recommend purchasing scrub tops and bottoms from the same collection. Products from different collections may not be an exact color match.<\/em><\/p>",
+            "text": "<p>Porter uses a color-by-discipline program to increase patient satisfaction. <\/p><p><\/p><p><strong>To see your product selection, please <\/strong><a href=\"\/account\" title=\"\/account\"><strong>Login<\/strong><\/a><\/p><p><\/p><p><em> Please Note: We recommend purchasing scrub tops and bottoms from the same collection. Products from different collections may not be an exact color match.<\/em><\/p>",
             "text_style": "body"
           }
         },
@@ -55,6 +55,7 @@
     },
     "cfbb0a2d-7312-40f6-919e-8580445de265": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "template--15911564804257__cfbb0a2d-7312-40f6-919e-8580445de265-16663107535b90e350-0": {
           "type": "column",
@@ -98,6 +99,7 @@
     },
     "4cc19e8c-d5d7-4d50-a7d4-18ac7da415b6": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "template--15906665988257__4cc19e8c-d5d7-4d50-a7d4-18ac7da415b6-166555153332927ebd-0": {
           "type": "featured_collection",
@@ -222,6 +224,7 @@
     },
     "430edfe1-14dd-413a-861d-909f2c3d8d59": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "template--15911564804257__430edfe1-14dd-413a-861d-909f2c3d8d59-166620108950b5ddb2-0": {
           "type": "featured_collection",
@@ -294,6 +297,15 @@
         "padding_top": 0,
         "padding_bottom": 36
       }
+    },
+    "2763514a-c72f-4631-9eec-298ecd4a4906": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% if customer %}\n\n{% render 'customer-ext' %}\n\n{% endif %}",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -301,6 +313,7 @@
     "e418d921-7cfd-47e2-8709-33cd4be731ed",
     "cfbb0a2d-7312-40f6-919e-8580445de265",
     "4cc19e8c-d5d7-4d50-a7d4-18ac7da415b6",
-    "430edfe1-14dd-413a-861d-909f2c3d8d59"
+    "430edfe1-14dd-413a-861d-909f2c3d8d59",
+    "2763514a-c72f-4631-9eec-298ecd4a4906"
   ]
 }

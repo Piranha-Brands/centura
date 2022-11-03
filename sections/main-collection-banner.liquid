@@ -9,14 +9,14 @@
   }
 {%- endstyle -%}
 
-{%  assign hospital-title = collection.title | split: ' | ' | last %}
+  {%  assign hospital-title = collection.title | split: ' | ' | last %}
 
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
   <div class="collection-hero__inner page-width">
     <div class="collection-hero__text-wrapper">
       <h1 class="collection-hero__title">
         <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
-        {{ hospital-title }}
+           {{ hospital-title }}
       </h1>
 
       {%- if section.settings.show_collection_description -%}

@@ -41,7 +41,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Centura_St_Anthony_copy.png",
-        "height": "small",
+        "height": "adapt",
         "desktop_image_width": "small",
         "layout": "image_first",
         "desktop_content_position": "top",
@@ -55,6 +55,7 @@
     },
     "6a79d072-f90e-4550-b121-e92f6199761f": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "template--15906665988257__6a79d072-f90e-4550-b121-e92f6199761f-1666305994514aa25e-0": {
           "type": "column",
@@ -98,6 +99,7 @@
     },
     "4cc19e8c-d5d7-4d50-a7d4-18ac7da415b6": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "template--15906665988257__4cc19e8c-d5d7-4d50-a7d4-18ac7da415b6-166555153332927ebd-0": {
           "type": "featured_collection",
@@ -156,12 +158,22 @@
         "padding_top": 0,
         "padding_bottom": 36
       }
+    },
+    "47ae964a-f955-4884-b5c8-064aba3434eb": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% if customer %}\n\n{% render 'customer-ext' %}\n\n{% endif %}",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "e418d921-7cfd-47e2-8709-33cd4be731ed",
     "6a79d072-f90e-4550-b121-e92f6199761f",
-    "4cc19e8c-d5d7-4d50-a7d4-18ac7da415b6"
+    "4cc19e8c-d5d7-4d50-a7d4-18ac7da415b6",
+    "47ae964a-f955-4884-b5c8-064aba3434eb"
   ]
 }
