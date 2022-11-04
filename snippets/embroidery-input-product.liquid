@@ -8,6 +8,8 @@ Embroidery inputs for PDP
 {% assign location = customer.metafields.customer_fields.location.value %}
 {% assign embroidery_variants = embroidery.variants | where:'option1',location %}
 
+<div name="test" class="{{ embroiderable }} - {{ location }}"></div>
+
 {% if request.path contains "pant" %}
 
 {% elsif embroiderable == 1 and location != blank and location != "SAH" %}
