@@ -15,7 +15,11 @@ Embroidery control module for PDP
   {% assign emb_variants = embroidery.variants %}
 {% endif %}
 
-{% if embroiderable == 1 and location != blank and location != "St Anthony's" %}
+{% if request.path contains "pant" %}
+  <h1>Not available</h1>
+
+
+{% elsif embroiderable == 1 and location != blank and location != "St Anthony's" %}
   {%- comment -%} if product in embroiderable collection, show embroidery ft. {%- endcomment -%}
   <div class="product__accordion accordion">
       <details open>
