@@ -8,12 +8,13 @@ Embroidery inputs for PDP
 {% assign location = customer.metafields.customer_fields.location.value %}
 {% assign embroidery_variants = embroidery.variants | where:'option1',location %}
 
+{% if request.path contains "pant" %}
 
-{% if embroiderable == 1 and location != blank and location != "SAH" %}
+{% elsif embroiderable == 1 and location != blank and location != "St Anthony's" %}
     
 
     <input type="hidden" name="embroidery-variant" value="{{ embroidery_variants.first.id }}">
-    <input type="hidden"name="embroidery-sku", value="{{ embroidery_variants.first.sku }}">
+    <input type="hidden"name="embroiery-sku", value="{{ embroidery_variants.first.sku }}">
 
 
 
