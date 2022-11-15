@@ -12,7 +12,7 @@ Embroidery inputs for PDP
 
 {% if request.path contains "pant" %}
 
-{% elsif embroiderable == 1 and location != "SAH" %}
+{% elsif embroiderable == 1 and location != "SAH" and location != "CEP" %}
     
 
     <input type="hidden" name="embroidery-variant" value="{{ embroidery_variants.first.id }}">
