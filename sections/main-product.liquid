@@ -490,6 +490,10 @@
               <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
             {%- when 'variant_picker' -%}
               {%- unless product.has_only_default_variant -%}
+              {% comment %} override dawn default for variant stitchwork by style sibling {% endcomment %}
+              {% if product.metafields.pb_backend.style_siblings.value != blank and location == "CEP" %}
+                {% render 'style-siblings', picker_type:block.settings.picker_type %}
+              {% else %}
                 {%- if block.settings.picker_type == 'button' -%}
                   <variant-radios
                     class="no-js-hidden"
@@ -561,6 +565,8 @@
                     </script>
                   </variant-selects>
                 {%- endif -%}
+                {% endif %}
+                {% comment %} end overriding feature {% endcomment %}
               {%- endunless -%}
 
               <noscript class="product-form__noscript-wrapper-{{ section.id }}">
