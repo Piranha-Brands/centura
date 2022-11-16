@@ -49,7 +49,7 @@
   {%- endif -%}
   
   {% comment %} begin overriing feature area {% endcomment %}
-  {% if product.metafields.pb_backend.style_siblings.value != blank %}
+  {% if product.metafields.pb_backend.style_siblings.value != blank and location == "CEP"%}
 <!--   renders SPP   -->
     {% render 'style-siblings-media' with section as section%}
   {% else %}
