@@ -47,7 +47,13 @@
       onload="this.media='all'"
     >
   {%- endif -%}
-
+  
+  {% comment %} begin overriing feature area {% endcomment %}
+  {% if product.metafields.pb_backend.style_siblings.value != blank %}
+<!--   renders SPP   -->
+    {% render 'style-siblings-media' with section as section%}
+  {% else %}
+    
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       <media-gallery
@@ -309,6 +315,8 @@
         {%- endif -%}
       </media-gallery>
     </div>
+    {% endif %}
+    
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
       <div
         id="ProductInfo-{{ section.id }}"
