@@ -75,6 +75,8 @@ class FacetFiltersForm extends HTMLElement {
 
   static renderProductGridContainer(html) {
     document.getElementById('ProductGridContainer').innerHTML = new DOMParser().parseFromString(html, 'text/html').getElementById('ProductGridContainer').innerHTML;
+    console.log('done rendering');
+    FilterColorMedia();
   }
 
   static renderProductCount(html) {
