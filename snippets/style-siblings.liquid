@@ -1,0 +1,85 @@
+{% comment %}
+snippet takes a product, accesses pb_backend.style_siblings metafield and processes stitchwork nav of all variants if applicable
+{% endcomment %}
+
+{%- if picker_type == 'button' -%}
+    <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+    {%- for option in product.options_with_values -%}
+        <fieldset class="js product-form__input">
+            <legend class="form__label">{{ option.name }}</legend>
+            {% if option.name == 'Color' %}
+                {% for sib_product in product.metafields.pb_backend.style_siblings.value %}
+                    {% assign sib_colors = sib_product.options_with_values | where: 'name', 'Color' | first %}
+                    {%- for value in sib_colors.values -%}
+                        <input type="radio"
+                            {% if option.selected_value == value %}checked{% endif %}
+                        >
+                        <!-- <span style="display:none;">{{ sib_product.first_available_variant.url }}</span> -->
+                        <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" onclick="location.href='{{ sib_product.variants.first.url }}';">
+                        {{ value }}
+                        </label>
+                    {% endfor %}
+                {% endfor %}
+                
+            {% else %}
+                {%- for value in option.values -%}
+                    <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                        name="{{ option.name }}"
+                        value="{{ value | escape }}"
+                        form="{{ product_form_id }}"
+                        {% if option.selected_value == value %}checked{% endif %}
+                    >
+                    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                    {{ value }}
+                    </label>
+                {%- endfor -%}
+            {% endif %}
+            
+        </fieldset>
+    {%- endfor -%}
+    <script type="application/json">
+        {{ product.variants | json }}
+    </script>
+    </variant-radios>
+{%- else -%}
+    <variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+    {%- for option in product.options_with_values -%}
+        <div class="product-form__input product-form__input--dropdown">
+        <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
+            {{ option.name }}
+        </label>
+        <div class="select">
+            <select id="Option-{{ section.id }}-{{ forloop.index0 }}"
+            class="select__select"
+            name="options[{{ option.name | escape }}]"
+            form="{{ product_form_id }}"
+            {% if option.name == 'Color' %}onchange="location = this.value;"{% endif %}
+            >
+            {% if option.name == 'Color' %}
+                {% for sib_product in product.metafields.pb_backend.style_siblings.value %}
+                    {% assign sib_colors = sib_product.options_with_values | where: 'name', 'Color' | first %}
+                    {%- for value in sib_colors.values -%}
+                        <option {% if sib_product != product%}value="{{ sib_product.url }}"{% else %}value="{{ value | escape }}"{% endif %} {% if option.selected_value == value %}selected="selected"{% endif %}
+                        >
+                        {{ value }}
+                        </option>
+                    {%- endfor -%}
+                {% endfor %}
+            {% else %}
+                {%- for value in option.values -%}
+                    <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
+                    {{ value }}
+                    </option>
+                {%- endfor -%}
+            {% endif %}
+            </select>
+            {% render 'icon-caret' %}
+        </div>
+        </div>
+    {%- endfor -%}
+
+    <script type="application/json">
+        {{ product.variants | json }}
+    </script>
+    </variant-selects>
+{%- endif -%}

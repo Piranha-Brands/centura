@@ -75,6 +75,8 @@ class FacetFiltersForm extends HTMLElement {
 
   static renderProductGridContainer(html) {
     document.getElementById('ProductGridContainer').innerHTML = new DOMParser().parseFromString(html, 'text/html').getElementById('ProductGridContainer').innerHTML;
+    console.log('done rendering');
+    FilterColorMedia();
   }
 
   static renderProductCount(html) {
@@ -265,3 +267,24 @@ class FacetRemove extends HTMLElement {
 }
 
 customElements.define('facet-remove', FacetRemove);
+
+function FilterColorMedia(){
+  console.log('Filtering colors...')
+  var activeColorFacets =  $('input[name="filter.p.m.pb_backend.all_base_colors"]:checked');
+
+  var activeColors = Array.from(new Set(activeColorFacets.map(function(){
+      return ".card__media[base_color='"+this.value+"']"
+  })));
+  q = activeColors.join(',')
+
+  if (activeColors.length > 0){
+    console.log(q);
+    $('.card__media').hide();
+    $(q).show();
+  }
+  
+};
+
+$('#ProductGridContainer').ready(function(){
+    FilterColorMedia();
+});

@@ -19,6 +19,8 @@
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
+{% assign location = customer.metafields.customer_fields.location.value %}
+
 {%- if card_product and card_product != empty -%}
   {%- liquid
     assign ratio = 1
@@ -97,6 +99,11 @@
             </div>
           </div>
         {%- endif -%}
+  
+
+      {% render 'style-siblings-media-grid' for card_product.metafields.pb_backend.style_siblings.value as product %}
+
+      
         <div class="card__content">
           <div class="card__information">
             <h3
