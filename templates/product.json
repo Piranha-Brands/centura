@@ -35,6 +35,7 @@
         },
         "c6a26929-b1f0-4b4e-87ff-440871b90261": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Please note: All embroidered products are final sale and cannot be returned",
             "text_style": "subtitle"
