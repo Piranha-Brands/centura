@@ -138,10 +138,20 @@
               "color_scheme": "background-2",
               "link": ""
             }
+          },
+          "2232f0fc-4871-49bc-8d15-300766378fd8": {
+            "type": "announcement",
+            "settings": {
+              "text": "Please note: Customer support will not be available Thursday, Nov. 24th and Friday, Nov. 25th in observance of Thanksgiving. Support will resume on Monday, Nov. 28th. Have a Happy Thanksgiving!",
+              "text_alignment": "center",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
           }
         },
         "block_order": [
-          "announcement-bar-0"
+          "announcement-bar-0",
+          "2232f0fc-4871-49bc-8d15-300766378fd8"
         ],
         "settings": {
         }
