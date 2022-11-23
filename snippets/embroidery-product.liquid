@@ -78,7 +78,7 @@ Embroidery control module for PDP
           </div>
           <span id="embroidery-logo-selection">{{ emb_variants.first.title }}: {{ emb_variants.first.price | money }}</span>
           
-          
+          {% render "embroidery-sale-warning" %}
         </div>
       </details>
     </div>
