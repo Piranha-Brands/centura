@@ -33,6 +33,13 @@
             "picker_type": "button"
           }
         },
+        "c6a26929-b1f0-4b4e-87ff-440871b90261": {
+          "type": "text",
+          "settings": {
+            "text": "Please note: All embroidered products are final sale and cannot be returned",
+            "text_style": "subtitle"
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -81,6 +88,7 @@
         "caption",
         "price",
         "variant_picker",
+        "c6a26929-b1f0-4b4e-87ff-440871b90261",
         "quantity_selector",
         "buy_buttons",
         "description",
