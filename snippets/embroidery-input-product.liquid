@@ -10,9 +10,8 @@ Embroidery inputs for PDP
 
 <div name="test" class="{{ embroiderable }} - {{ location }}"></div>
 
-{% if request.path contains "pant" %}
 
-{% elsif embroiderable == 1 and location != "SAH" and location != "CEP" %}
+{% if embroiderable == 1 and location != "SAH" and location != "CEP" %}
     
 
     <input type="hidden" name="embroidery-variant" value="{{ embroidery_variants.first.id }}">
