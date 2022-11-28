@@ -32,12 +32,22 @@
             "button_label": "Button label",
             "button_link": ""
           }
+        },
+        "c6f5af15-6058-40b2-a80d-79daba8d1242": {
+          "type": "caption",
+          "disabled": true,
+          "settings": {
+            "caption": "Add a tagline",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
         }
       },
       "block_order": [
         "template--15906665988257__e418d921-7cfd-47e2-8709-33cd4be731ed-1665553342fd718106-0",
         "template--15906665988257__e418d921-7cfd-47e2-8709-33cd4be731ed-1665553342fd718106-1",
-        "template--15906665988257__e418d921-7cfd-47e2-8709-33cd4be731ed-1665553342fd718106-2"
+        "template--15906665988257__e418d921-7cfd-47e2-8709-33cd4be731ed-1665553342fd718106-2",
+        "c6f5af15-6058-40b2-a80d-79daba8d1242"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Centura_St_Anthony_copy.png",
