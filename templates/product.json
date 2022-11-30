@@ -15,6 +15,13 @@
           "settings": {
           }
         },
+        "7f327b7f-9488-4c92-892b-89a83a36ee24": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.pb_backend.style.value }}",
+            "text_style": "body"
+          }
+        },
         "caption": {
           "type": "text",
           "settings": {
@@ -78,6 +85,7 @@
       "block_order": [
         "vendor",
         "title",
+        "7f327b7f-9488-4c92-892b-89a83a36ee24",
         "caption",
         "price",
         "variant_picker",
