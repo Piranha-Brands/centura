@@ -800,6 +800,7 @@
                             <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}">{% render 'icon-caret' %}</button>
                             <div class="slider-counter slider-counter--{{ block.settings.pagination_style }}{% if block.settings.pagination_style == 'counter' or block.settings.pagination_style == 'numbers' %} caption{% endif %}">
                               {%- if block.settings.pagination_style == 'counter' -%}
+       
                                 <span class="slider-counter--current">1</span>
                                 <span aria-hidden="true"> / </span>
                                 <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
@@ -929,12 +930,14 @@
               </ul>
           {%- endcase -%}
         {%- endfor -%}
-        {% comment %}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
           {{ 'products.product.view_full_details' | t }}
           {% render 'icon-arrow' %}
         </a>
-        {% endcomment %}
+
+
+
+                        
       </div>
     </div>
     {%- if section.settings.media_position == 'right' -%}
