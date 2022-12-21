@@ -492,7 +492,7 @@
               {%- unless product.has_only_default_variant -%}
               {% comment %} override dawn default for variant stitchwork by style sibling {% endcomment %}
               {% if product.metafields.pb_backend.style_siblings.value != blank and location == "CEP" %}
-            {% comment %}      {% render 'style-siblings', picker_type:block.settings.picker_type %}{% endcomment %}
+                {% render 'style-siblings', picker_type:block.settings.picker_type %}
               {% else %}
                 {%- if block.settings.picker_type == 'button' -%}
                   <variant-radios
