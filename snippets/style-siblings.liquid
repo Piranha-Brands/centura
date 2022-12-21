@@ -19,7 +19,7 @@
               {% if sib_product != product %}
                 <input
                   type="radio"
-                  {% if option.selected_value == value %}
+                  {% if option.selected_value == value and option.name == "Color"%}
                     checked
                   {% endif %}
                 >
