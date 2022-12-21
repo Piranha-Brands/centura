@@ -101,7 +101,7 @@
                     {% else %}
                       value="{{ value | escape }}"
                     {% endif %}
-                    {% if option.selected_value == value %}
+                    {% if option.selected_value == value or sib_product == product %}
                       selected="selected"
                     {% endif %}
                   >
