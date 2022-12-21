@@ -511,7 +511,7 @@
                             name="{{ option.name }}"
                             value="{{ value | escape }}"
                             form="{{ product_form_id }}"
-                            {% if option.selected_value == value and option.size %}
+                            {% if option.selected_value == value and option.name == "Size" %}
                                 checked 
                             {% endif %}
                           >
