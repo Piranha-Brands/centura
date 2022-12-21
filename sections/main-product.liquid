@@ -569,7 +569,7 @@
                 {% endif %}
                 {% comment %} end overriding feature {% endcomment %}
               {%- endunless -%}
-
+{% comment %}
               <noscript class="product-form__noscript-wrapper-{{ section.id }}">
                 <div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
                   <label class="form__label" for="Variants-{{ section.id }}">
@@ -602,7 +602,7 @@
                   </div>
                 </div>
               </noscript>
-
+{% endcomment %}
               {% comment %} Embroidery functionality ported in below last variant option {% endcomment %}
               {% render 'embroidery-product' %}
 
