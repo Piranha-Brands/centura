@@ -647,7 +647,7 @@
                           type="submit"
                           name="add"
                           class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
-                          {% if product.selected_or_first_available_variant.available == false or location == 'CEP' %}
+                          {% if product.selected_or_first_available_variant.available == false or customer.metafields.customer_fields.location.value == 'CEP' %}
                             disabled
                           {% endif %}
                         >
