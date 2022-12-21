@@ -512,7 +512,7 @@
                             value="{{ value | escape }}"
                             form="{{ product_form_id }}"
                             {% if option.selected_value == value %}
-{% comment %}                               checked {% endcomment %}
+                                checked 
                             {% endif %}
                           >
                           <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
