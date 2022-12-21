@@ -111,12 +111,14 @@
               {% endfor %}
             {% else %}
               {%- for value in option.values -%}
+                {% comment %}
                 <option
                   value="{{ value | escape }}"
-                  {% if option.selected_value == value and option.name == "Color"%}
+                  {% if option.selected_value == value %}
                     selected="selected"
                   {% endif %}
                 >
+                {% endcomment %}
                   {{ value }}
                 </option>
               {%- endfor -%}
