@@ -103,7 +103,7 @@
                       value="{{ value | escape }}"
                     {% endif %}
                     {% if option.selected_value == value %}
-                      selected="selected"
+          {% comment %}            selected="selected"   {% endcomment %}
                     {% endif %}
                   >
                     {{ value }}
