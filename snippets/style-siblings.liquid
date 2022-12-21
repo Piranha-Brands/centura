@@ -38,7 +38,7 @@
                   value="{{ value | escape }}"
                   form="{{ product_form_id }}"
                   {% if option.selected_value == value %}
-                       checked 
+                    {% comment %}   checked {% endcomment %}
                   {% endif %}
                 >
                 <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
