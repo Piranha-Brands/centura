@@ -605,7 +605,6 @@
               {% comment %} Embroidery functionality ported in below last variant option {% endcomment %}
               {% render 'embroidery-product' %}
 
-{% endcomment %}
             {%- when 'buy_buttons' -%}
               <div {{ block.shopify_attributes }}>
               
@@ -684,6 +683,7 @@
                       {% endif %}
                   {%- endform -%}
                 </product-form>
+{% endcomment %}
 
                 {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
 
