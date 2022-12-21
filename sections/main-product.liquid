@@ -51,10 +51,11 @@
   {% comment %} begin overriing feature area {% endcomment %}
   {% if product.metafields.pb_backend.style_siblings.value != blank and location == "CEP"%}
 <!--   renders SPP   -->
-    {% render 'style-siblings-media' with section as section%}
+    {% render 'style-siblings-media' with section as section%}  
   {% else %}
     
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       <media-gallery
         id="MediaGallery-{{ section.id }}"
@@ -603,8 +604,8 @@
               </noscript>
 
               {% comment %} Embroidery functionality ported in below last variant option {% endcomment %}
-              {% render 'embroidery-product' %}
 
+              {% render 'embroidery-product' %}
             {%- when 'buy_buttons' -%}
               <div {{ block.shopify_attributes }}>
               
@@ -713,6 +714,7 @@
                 </pickup-availability>
               </div>
 
+
               <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
@@ -799,6 +801,7 @@
                             <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}">{% render 'icon-caret' %}</button>
                             <div class="slider-counter slider-counter--{{ block.settings.pagination_style }}{% if block.settings.pagination_style == 'counter' or block.settings.pagination_style == 'numbers' %} caption{% endif %}">
                               {%- if block.settings.pagination_style == 'counter' -%}
+       
                                 <span class="slider-counter--current">1</span>
                                 <span aria-hidden="true"> / </span>
                                 <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
@@ -849,7 +852,8 @@
                 if block.settings.heading_3 == empty
                   assign heading3Empty = true
                 endif
-
+%}
+        
                 if heading1Empty == false and block.settings.icon_1 != 'none' or block.settings.image_1 != null
                   assign textOnlyAllItems = false
                   elsif heading2Empty == false and block.settings.icon_2 != 'none' or block.settings.image_2 != null
@@ -932,6 +936,10 @@
           {{ 'products.product.view_full_details' | t }}
           {% render 'icon-arrow' %}
         </a>
+
+
+
+                        
       </div>
     </div>
     {%- if section.settings.media_position == 'right' -%}
