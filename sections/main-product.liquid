@@ -684,7 +684,6 @@
                       {% endif %}
                   {%- endform -%}
                 </product-form>
-{% endcomment %}
 
                 {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
 
@@ -714,6 +713,7 @@
                   </template>
                 </pickup-availability>
               </div>
+{% endcomment %}
 
               <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
             {%- when 'rating' -%}
