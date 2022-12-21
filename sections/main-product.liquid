@@ -315,7 +315,6 @@
         {%- endif -%}
       </media-gallery>
     </div>
-    {% endif %}
     
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
       <div
@@ -934,6 +933,7 @@
         </a>
       </div>
     </div>
+    {% endif %}
     {%- if section.settings.media_position == 'right' -%}
       <div class="grid__item product__media-wrapper small-hide">
         <media-gallery
