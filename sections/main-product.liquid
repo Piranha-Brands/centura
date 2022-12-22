@@ -654,11 +654,13 @@
                         >
                           <span>
                       {% if location == 'CEP' %} Please choose a size and color {% endif %}
+                      {% comment %}
                             {%- if product.selected_or_first_available_variant.available -%}
                               {{ 'products.product.add_to_cart' | t }}
                             {%- else -%}
                               {{ 'products.product.sold_out' | t }}
                             {%- endif -%}
+                      {% endcomment %}
                           </span>
                           <div class="loading-overlay__spinner hidden">
                             <svg
