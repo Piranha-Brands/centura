@@ -431,11 +431,12 @@ applicable
                     type="submit"
                     name="add"
                     class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
-                    {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+                    {% if product.selected_or_first_available_variant.available == false %}disabled{% elsif customer.metafields.customer_fields.location.value == 'CEP' %}disabled{% endif %}
+                test="{{ product.metafields.customer_fields.location.value }}"
                   >
                       <span>
                         {%- if product.selected_or_first_available_variant.available -%}
-                          {{ 'products.product.add_to_cart' | t }}
+                          {% comment %}{{ 'products.product.add_to_cart' | t }}{% endcomment %} Please Select a Color & Size
                         {%- else -%}
                           {{ 'products.product.sold_out' | t }}
                         {%- endif -%}

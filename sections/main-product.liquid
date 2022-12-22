@@ -26,6 +26,7 @@
     }
   {%- endstyle -%}
 
+
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
   {%- assign first_3d_model = product.media | where: 'media_type', 'model' | first -%}
@@ -51,7 +52,7 @@
   {% comment %} begin overriing feature area {% endcomment %}
   {% if product.metafields.pb_backend.style_siblings.value != blank and location == "CEP"%}
 <!--   renders SPP   -->
-    {% render 'style-siblings-media' with section as section%}
+    {% render 'style-siblings-media' with section as section %}
   {% else %}
     
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
@@ -315,7 +316,6 @@
         {%- endif -%}
       </media-gallery>
     </div>
-    {% endif %}
     
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
       <div
@@ -511,8 +511,8 @@
                             name="{{ option.name }}"
                             value="{{ value | escape }}"
                             form="{{ product_form_id }}"
-                            {% if option.selected_value == value %}
-                              checked
+                            {% if option.selected_value == value and option.name == "Color" %}
+                                checked 
                             {% endif %}
                           >
                           <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
@@ -642,22 +642,25 @@
                     {% render 'embroidery-input-product' %}
                     {% if customer %}
                     <div class="product-form__buttons">
-                    
+                      <span>test</span>
                       <button
                           type="submit"
                           name="add"
                           class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
                           {% if product.selected_or_first_available_variant.available == false %}
                             disabled
+                            {% elsif location == 'CEP' %}
+                            disabled
                           {% endif %}
                         >
-                          <span>
+                          <span class="testing" >
                             {%- if product.selected_or_first_available_variant.available -%}
+                              
                               {{ 'products.product.add_to_cart' | t }}
                             {%- else -%}
                               {{ 'products.product.sold_out' | t }}
                             {%- endif -%}
-                          </span>
+                          </span> 
                           <div class="loading-overlay__spinner hidden">
                             <svg
                               aria-hidden="true"
@@ -932,6 +935,7 @@
         </a>
       </div>
     </div>
+    {% endif %}
     {%- if section.settings.media_position == 'right' -%}
       <div class="grid__item product__media-wrapper small-hide">
         <media-gallery
