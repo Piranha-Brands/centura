@@ -435,7 +435,7 @@ applicable
                   >
                       <span>
                         {%- if product.selected_or_first_available_variant.available -%}
-                          {{ 'products.product.add_to_cart' | t }} blah blah
+                          {% comment %}{{ 'products.product.add_to_cart' | t }}{% endcomment %} Please Select a Color & Size
                         {%- else -%}
                           {{ 'products.product.sold_out' | t }}
                         {%- endif -%}
