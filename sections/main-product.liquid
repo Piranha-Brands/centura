@@ -653,6 +653,7 @@
                           {% endif %}
                         >
                           <span>
+                      {% if location == 'CEP' %} Please choose a size and color {% endif %}
                             {%- if product.selected_or_first_available_variant.available -%}
                               {{ 'products.product.add_to_cart' | t }}
                             {%- else -%}
@@ -671,7 +672,6 @@
                               <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
                             </svg>
                           </div>
-                       Please select a size and color
                         
                         </button>
                       
