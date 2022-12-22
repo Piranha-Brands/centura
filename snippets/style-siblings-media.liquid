@@ -432,6 +432,7 @@ applicable
                     name="add"
                     class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
                     {% if product.selected_or_first_available_variant.available == false or product.metafields.customer_fields.location.value == 'CEP' %}disabled{% endif %}
+                test="{{ product.metafields.customer_fields.location.value }}"
                   >
                       <span>
                         {%- if product.selected_or_first_available_variant.available -%}
