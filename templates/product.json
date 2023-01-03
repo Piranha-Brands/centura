@@ -15,8 +15,15 @@
           "settings": {
           }
         },
+        "67c178ac-3ea1-4554-90cc-af5953c80d96": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<h4><span class=\"text\">Item Number<\/span>: <span class=\"style-number\">{{ product.metafields.pb_backend.style }}<\/span><\/h4>\n\n{% style %}\n.text {\nfont-weight: 600;\n\n}\n.style-number {\nfont-size: 1.8rem;\nfont-weight: 550;\n}\n\n{% endstyle %}"
+          }
+        },
         "7f327b7f-9488-4c92-892b-89a83a36ee24": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.metafields.pb_backend.style.value }}",
             "text_style": "body"
@@ -85,6 +92,7 @@
       "block_order": [
         "vendor",
         "title",
+        "67c178ac-3ea1-4554-90cc-af5953c80d96",
         "7f327b7f-9488-4c92-892b-89a83a36ee24",
         "caption",
         "price",
