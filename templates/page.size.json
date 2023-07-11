@@ -282,6 +282,87 @@
         "image": "shopify:\/\/shop_images\/koi_logo_1000x_b91b97fb-bcfd-41ff-af12-c9b47dbf91bb.png",
         "bgimgurl": ""
       }
+    },
+    "d7817b09-1529-4335-b814-788e3a0cdf77": {
+      "type": "image-with-text-blocks",
+      "blocks": {
+        "70b6b141-2c62-45e3-84d9-1b4252dc5f71": {
+          "type": "Images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/landau_fit-image.webp",
+            "image_width": "medium",
+            "imgurl": "https:\/\/cdn.shopify.com\/s\/files\/1\/0600\/6118\/8257\/files\/landau_fit-image.webp?v=1689074339"
+          }
+        },
+        "c9706168-a828-427a-8de4-064143896d0d": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Click sizing chart to enlarge<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "70b6b141-2c62-45e3-84d9-1b4252dc5f71",
+        "c9706168-a828-427a-8de4-064143896d0d"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/landaulogo-image.webp",
+        "bgimgurl": ""
+      }
+    },
+    "b50333cd-e1f2-4b75-a54b-2d454ce25cad": {
+      "type": "image-with-text-blocks",
+      "blocks": {
+        "caa8febf-1572-4066-a69b-45ff18e59659": {
+          "type": "Images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mcsizechart-image.webp",
+            "image_width": "small",
+            "imgurl": "https:\/\/cdn.shopify.com\/s\/files\/1\/0600\/6118\/8257\/files\/mcsizechart-image.webp?v=1689074416"
+          }
+        },
+        "a7d65a27-2f91-45f7-bbaf-4f33e4539961": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Click sizing chart to enlarge<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "caa8febf-1572-4066-a69b-45ff18e59659",
+        "a7d65a27-2f91-45f7-bbaf-4f33e4539961"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/download-image.png",
+        "bgimgurl": ""
+      }
+    },
+    "b52272c2-3260-446f-8e9d-65eb9789f432": {
+      "type": "image-with-text-blocks",
+      "blocks": {
+        "804f0bdc-c40d-4ce2-8f5b-9a000aa2170f": {
+          "type": "Images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/meta-image.webp",
+            "image_width": "small",
+            "imgurl": "https:\/\/cdn.shopify.com\/s\/files\/1\/0600\/6118\/8257\/files\/meta-image.webp?v=1689074482"
+          }
+        },
+        "c6ff3b6d-1bea-4374-b407-752d232e9c7d": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Click sizing chart to enlarge<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "804f0bdc-c40d-4ce2-8f5b-9a000aa2170f",
+        "c6ff3b6d-1bea-4374-b407-752d232e9c7d"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/meta_labwear-image.webp",
+        "bgimgurl": ""
+      }
     }
   },
   "order": [
@@ -294,6 +375,9 @@
     "8ab0c99d-b0bd-48db-a7ab-a468f84728b4",
     "3c2a9ee9-e7b4-41e0-83e7-fb62e3c5b6a2",
     "650d8dad-56fa-4cfe-a8de-4fc163d8f16f",
-    "9c8c5614-7b90-4755-92f9-8ccd60909a95"
+    "9c8c5614-7b90-4755-92f9-8ccd60909a95",
+    "d7817b09-1529-4335-b814-788e3a0cdf77",
+    "b50333cd-e1f2-4b75-a54b-2d454ce25cad",
+    "b52272c2-3260-446f-8e9d-65eb9789f432"
   ]
 }
