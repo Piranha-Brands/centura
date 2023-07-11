@@ -120,6 +120,42 @@
         "image": "shopify:\/\/shop_images\/logo-3.png",
         "bgimgurl": ""
       }
+    },
+    "8d01397c-4d46-4caa-a79d-b5039cac69f7": {
+      "type": "image-with-text-blocks",
+      "blocks": {
+        "66df5b7d-9ea9-4686-8353-dea71eca36a1": {
+          "type": "Images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image-6.webp",
+            "image_width": "small",
+            "imgurl": "https:\/\/cdn.shopify.com\/s\/files\/1\/0600\/6118\/8257\/files\/image-6.webp?v=1689073829"
+          }
+        },
+        "b6a5d705-c79b-4f8b-a4b6-08fc9abb7d91": {
+          "type": "Images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fashion-image.webp",
+            "image_width": "small",
+            "imgurl": "https:\/\/cdn.shopify.com\/s\/files\/1\/0600\/6118\/8257\/files\/Fashion-image.webp?v=1689073875"
+          }
+        },
+        "7fd488aa-00e9-430d-ae7f-593b816246b6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Click sizing chart to enlarge<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "66df5b7d-9ea9-4686-8353-dea71eca36a1",
+        "b6a5d705-c79b-4f8b-a4b6-08fc9abb7d91",
+        "7fd488aa-00e9-430d-ae7f-593b816246b6"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/logo-4.webp",
+        "bgimgurl": ""
+      }
     }
   },
   "order": [
@@ -127,6 +163,7 @@
     "16c965bd-2c0c-41e7-a18d-e3d041ecdbf5",
     "2fadb8e9-e698-4e27-bb88-9a82ef63ea6d",
     "e132699f-1a0c-44ef-a340-538d56ea8403",
-    "f7a49f7d-8fa5-4c79-ae59-890a0ff15663"
+    "f7a49f7d-8fa5-4c79-ae59-890a0ff15663",
+    "8d01397c-4d46-4caa-a79d-b5039cac69f7"
   ]
 }
