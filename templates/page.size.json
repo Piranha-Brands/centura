@@ -228,6 +228,33 @@
         "image": "shopify:\/\/shop_images\/healing_hands_logo.webp",
         "bgimgurl": ""
       }
+    },
+    "650d8dad-56fa-4cfe-a8de-4fc163d8f16f": {
+      "type": "image-with-text-blocks",
+      "blocks": {
+        "7c7748a9-9cb6-4d9b-a58a-0d8fb2841bd9": {
+          "type": "Images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jockey_sizechart-image.webp",
+            "image_width": "medium",
+            "imgurl": "https:\/\/cdn.shopify.com\/s\/files\/1\/0600\/6118\/8257\/files\/jockey_sizechart-image.webp?v=1689074183"
+          }
+        },
+        "78cff967-3c18-42cd-b8cf-05625e67f84d": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Click sizing chart to enlarge<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "7c7748a9-9cb6-4d9b-a58a-0d8fb2841bd9",
+        "78cff967-3c18-42cd-b8cf-05625e67f84d"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/jockey_logo.webp",
+        "bgimgurl": ""
+      }
     }
   },
   "order": [
@@ -238,6 +265,7 @@
     "f7a49f7d-8fa5-4c79-ae59-890a0ff15663",
     "8d01397c-4d46-4caa-a79d-b5039cac69f7",
     "8ab0c99d-b0bd-48db-a7ab-a468f84728b4",
-    "3c2a9ee9-e7b4-41e0-83e7-fb62e3c5b6a2"
+    "3c2a9ee9-e7b4-41e0-83e7-fb62e3c5b6a2",
+    "650d8dad-56fa-4cfe-a8de-4fc163d8f16f"
   ]
 }
