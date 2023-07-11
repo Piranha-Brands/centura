@@ -183,6 +183,51 @@
         "image": "shopify:\/\/shop_images\/logo-5-removebg-preview.png",
         "bgimgurl": ""
       }
+    },
+    "3c2a9ee9-e7b4-41e0-83e7-fb62e3c5b6a2": {
+      "type": "image-with-text-blocks",
+      "blocks": {
+        "e900b6b1-efa0-4a40-973c-5b11aa0f2a29": {
+          "type": "Images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/healing_hands-image.webp",
+            "image_width": "small",
+            "imgurl": "https:\/\/cdn.shopify.com\/s\/files\/1\/0600\/6118\/8257\/files\/healing_hands-image.webp?v=1689074042"
+          }
+        },
+        "49847ed2-d258-4ee5-8ea7-de245a0864e1": {
+          "type": "Images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/healing-image.webp",
+            "image_width": "small",
+            "imgurl": "https:\/\/cdn.shopify.com\/s\/files\/1\/0600\/6118\/8257\/files\/healing-image.webp?v=1689074077"
+          }
+        },
+        "063b6479-8c30-4676-9ff9-4c56d6f0a420": {
+          "type": "Images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/womens-image.webp",
+            "image_width": "small",
+            "imgurl": "https:\/\/cdn.shopify.com\/s\/files\/1\/0600\/6118\/8257\/files\/womens-image.webp?v=1689074110"
+          }
+        },
+        "e5441011-dcaf-474d-bf77-403fd92bf9bc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Click sizing chart to enlarge<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "e900b6b1-efa0-4a40-973c-5b11aa0f2a29",
+        "49847ed2-d258-4ee5-8ea7-de245a0864e1",
+        "063b6479-8c30-4676-9ff9-4c56d6f0a420",
+        "e5441011-dcaf-474d-bf77-403fd92bf9bc"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/healing_hands_logo.webp",
+        "bgimgurl": ""
+      }
     }
   },
   "order": [
@@ -192,6 +237,7 @@
     "e132699f-1a0c-44ef-a340-538d56ea8403",
     "f7a49f7d-8fa5-4c79-ae59-890a0ff15663",
     "8d01397c-4d46-4caa-a79d-b5039cac69f7",
-    "8ab0c99d-b0bd-48db-a7ab-a468f84728b4"
+    "8ab0c99d-b0bd-48db-a7ab-a468f84728b4",
+    "3c2a9ee9-e7b4-41e0-83e7-fb62e3c5b6a2"
   ]
 }
