@@ -255,6 +255,33 @@
         "image": "shopify:\/\/shop_images\/jockey_logo.webp",
         "bgimgurl": ""
       }
+    },
+    "9c8c5614-7b90-4755-92f9-8ccd60909a95": {
+      "type": "image-with-text-blocks",
+      "blocks": {
+        "76ec660f-46e2-4929-aa5c-b9d845103365": {
+          "type": "Images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/koi_size_chart-image.webp",
+            "image_width": "medium",
+            "imgurl": "https:\/\/cdn.shopify.com\/s\/files\/1\/0600\/6118\/8257\/files\/koi_size_chart-image.webp?v=1689074262"
+          }
+        },
+        "12648bad-4190-4c9c-aac3-0f11797539cf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Click sizing chart to enlarge<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "76ec660f-46e2-4929-aa5c-b9d845103365",
+        "12648bad-4190-4c9c-aac3-0f11797539cf"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/koi_logo_1000x_b91b97fb-bcfd-41ff-af12-c9b47dbf91bb.png",
+        "bgimgurl": ""
+      }
     }
   },
   "order": [
@@ -266,6 +293,7 @@
     "8d01397c-4d46-4caa-a79d-b5039cac69f7",
     "8ab0c99d-b0bd-48db-a7ab-a468f84728b4",
     "3c2a9ee9-e7b4-41e0-83e7-fb62e3c5b6a2",
-    "650d8dad-56fa-4cfe-a8de-4fc163d8f16f"
+    "650d8dad-56fa-4cfe-a8de-4fc163d8f16f",
+    "9c8c5614-7b90-4755-92f9-8ccd60909a95"
   ]
 }
