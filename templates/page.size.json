@@ -49,11 +49,47 @@
         "image": "shopify:\/\/shop_images\/Barco-l_1000x_5d2d364e-a259-4cd0-85ba-6a6f6ae4748f.webp",
         "bgimgurl": ""
       }
+    },
+    "e132699f-1a0c-44ef-a340-538d56ea8403": {
+      "type": "image-with-text-blocks",
+      "blocks": {
+        "fa616fd3-b5d4-4bea-b70b-2ffae16419c4": {
+          "type": "Images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-2.webp",
+            "image_width": "small",
+            "imgurl": ""
+          }
+        },
+        "9011e1e9-ca12-4037-bc8a-ae71bc06f145": {
+          "type": "Images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image-3.webp",
+            "image_width": "small",
+            "imgurl": "https:\/\/cdn.shopify.com\/s\/files\/1\/0600\/6118\/8257\/files\/image-3.webp?v=1689073526"
+          }
+        },
+        "1b5f2493-a6e7-4abb-9af1-cf463b384b7a": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Click sizing chart to enlarge<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "fa616fd3-b5d4-4bea-b70b-2ffae16419c4",
+        "9011e1e9-ca12-4037-bc8a-ae71bc06f145",
+        "1b5f2493-a6e7-4abb-9af1-cf463b384b7a"
+      ],
+      "settings": {
+        "bgimgurl": ""
+      }
     }
   },
   "order": [
     "main",
     "16c965bd-2c0c-41e7-a18d-e3d041ecdbf5",
-    "2fadb8e9-e698-4e27-bb88-9a82ef63ea6d"
+    "2fadb8e9-e698-4e27-bb88-9a82ef63ea6d",
+    "e132699f-1a0c-44ef-a340-538d56ea8403"
   ]
 }
