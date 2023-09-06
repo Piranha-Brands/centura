@@ -12,7 +12,7 @@ Embroidery inputs for PDP
 
 
 
-{% if embroiderable == 1 and location != "SAH" and location != "CEP" %}
+{% if embroiderable == 1 and location != "SAH" and location != "CEP" and location != "EUC" and location != "Mountain ER" %}
     
 
     <input type="hidden" name="embroidery-variant" value="{{ embroidery_variants.first.id }}">
