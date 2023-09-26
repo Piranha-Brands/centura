@@ -239,6 +239,19 @@
   </head>
 
   <body class="gradient">
+    <!--Redirect unless logged in-->
+  {% unless customer %}
+    {% if template contains 'customers' %}
+      {% assign send_to_login = false %}
+    {% else %}
+      {% assign send_to_login = true %}
+    {% endif %}
+  {% endunless %}
+
+  {% if send_to_login and request.path != "/challenge" %}
+    <meta content="0; url=/account/login" http-equiv="refresh" />
+  {% else %}
+<!--End redirect, if tag closed just before closing body tag-->
     
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
@@ -299,6 +312,9 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    
+  <!--Closing redirect-->
+  {% endif %}
     
   <!-- Start of HubSpot Embed Code -->
   <script type=""text/javascript"" id=""hs-script-loader"" async defer src=""//js-na1.hs-scripts.com/6084858.js""></script>
