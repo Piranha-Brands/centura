@@ -132,6 +132,7 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "All Orders $50+ Ship Free",
               "text_alignment": "center",
